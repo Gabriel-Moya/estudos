@@ -1,5 +1,9 @@
+/*----------------------------------------*/
+/*Exercício 1018 do URI*/
+/*https://www.urionlinejudge.com.br/judge/pt/problems/view/1018*/
+/*----------------------------------------*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
 

@@ -1,15 +1,17 @@
+/*----------------------------------------*/
+/*Exercício 1014 do URI*/
+/*https://www.urionlinejudge.com.br/judge/pt/problems/view/1014*/
+/*----------------------------------------*/
+
 #include <stdio.h>
-#include <math.h>
-
+ 
 int main() {
-
-    int h, km;
-    float gasto;
-    scanf("%d %d", &h, &km);
-
-    gasto=((h*km)/12);
-
-    printf("%.3f\n", gasto);
-
+ 
+    int X;
+    float Y, media;
+    scanf("%d %f", &X, &Y);
+    media=X/Y;
+    printf("%.3f km/l\n", media);
+ 
     return 0;
 }
