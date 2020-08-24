@@ -16,3 +16,13 @@ Lista de exercícios e aprendizados do livro "Lógica de Programação e Algorit
 - Inserção de elementos HTML via JavaScript com referência a DOM
 
 No capítulo final, um jogo em JavaScript e novos exemplos que exploram os recursos discutidos ao longo do livro são apresentados com comentários e dicas, a fim de icentivar o leitor a prosseguir nos estudos sobre programação
+
+# Capitulo 1 - Introdução
+- Lógica de Programação
+- Entrada, processamento e saída de dados
+- Saída de dados com alert()
+- Variáveis e constantes
+- Entrada de dados com prompt()
+- Comentários
+- Tipos de dados e conversão de tipos
+- Exemplos de entrada, processamento e saída
