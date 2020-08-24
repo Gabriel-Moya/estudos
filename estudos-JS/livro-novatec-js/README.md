@@ -26,3 +26,8 @@ No capítulo final, um jogo em JavaScript e novos exemplos que exploram os recur
 - Comentários
 - Tipos de dados e conversão de tipos
 - Exemplos de entrada, processamento e saída
+
+Considerações finais do capítulo:
+Este capítulo objetivou destacar os pontos essenciais necessários para o aprendizado de lógica de programação com JavaScript.
+
+# Capitulo 2 - Integração com HTML
