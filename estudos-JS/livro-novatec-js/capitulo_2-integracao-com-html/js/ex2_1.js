@@ -11,5 +11,5 @@ function mostrarOla() {
 //cria uma referência ao botão (com id=) mostrar
 var mostrar = document.getElementById("mostrar");
 
-//resgistra para o botão "mostrar" um ouvinte para o evento click, que ao ser clicado irá chamar a função mostrarOla
+//registra para o botão "mostrar" um ouvinte para o evento click, que ao ser clicado irá chamar a função mostrarOla
 mostrar.addEventListener("click", mostrarOla);
