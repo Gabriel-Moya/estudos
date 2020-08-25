@@ -18,6 +18,7 @@ Lista de exercícios e aprendizados do livro "Lógica de Programação e Algorit
 No capítulo final, um jogo em JavaScript e novos exemplos que exploram os recursos discutidos ao longo do livro são apresentados com comentários e dicas, a fim de icentivar o leitor a prosseguir nos estudos sobre programação
 
 # Capitulo 1 - Introdução
+
 - Lógica de Programação
 - Entrada, processamento e saída de dados
 - Saída de dados com alert()
@@ -31,3 +32,14 @@ Considerações finais do capítulo:
 Este capítulo objetivou destacar os pontos essenciais necessários para o aprendizado de lógica de programação com JavaScript.
 
 # Capitulo 2 - Integração com HTML
+
+- Introdução a eventos e funções
+- Método getElementById()
+- Propriedades textContent, innerHTML e value
+- Formas de adicionar JavaScript ao HTML
+    - Rotinas de tratamento de eventos HTML
+    - Rotinas de tratamento de eventos DOM
+- Nomenclatura e escopo das variáveis
+- Operadores aritméticos e funções matemáticas
+
+Considerações finais do capítulo:
