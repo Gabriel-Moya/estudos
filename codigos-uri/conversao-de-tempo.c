@@ -1,3 +1,8 @@
+/*----------------------------------------*/
+/*Exercício 1019 do URI*/
+/*https://www.urionlinejudge.com.br/judge/pt/problems/view/1019*/
+/*----------------------------------------*/
+
 # include <stdio.h>
 
 int main() {
