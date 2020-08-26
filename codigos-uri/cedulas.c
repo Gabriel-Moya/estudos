@@ -10,7 +10,9 @@ int main() {
     int valor, nota100=0, nota50=0, nota20=0, nota10=0, nota5=0, nota2=0, nota1=0;
     scanf("%d", &valor);
 
-    while(valor>0){
+    printf("%d\n", valor);
+
+    while(valor>0 && valor<1000000){
         if(valor>=100)
         {
             nota100=nota100+1;
