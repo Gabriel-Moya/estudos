@@ -20,14 +20,5 @@ int main () {
         printf("%c",(char)encrypt);
     }
 
-    /*while(palavra[i] < strlen(palavra)) {
-        encrypt[i] = palavra[i]+desloc;
-        if (encrypt[i]>122)
-            encrypt[i] -= 26;
-        i++;
-    }
-
-    printf("%s", encrypt);*/
-
     return 0;
 }
