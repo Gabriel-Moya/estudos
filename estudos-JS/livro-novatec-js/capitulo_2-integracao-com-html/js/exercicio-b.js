@@ -10,7 +10,7 @@ function calculaTotal() {
     var tempo = inTempo.value;
 
     //Calculando o valor total a ser pago
-    var total = Math.floor((tempo/15)*valor);
+    var total = Math.ceil(tempo/15)*valor;
 
     //Retornando a saída
     outTotal.textContent = "Valor total a Pagar R$: " + total;
