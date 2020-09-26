@@ -43,3 +43,6 @@ Este capítulo objetivou destacar os pontos essenciais necessários para o apren
 - Operadores aritméticos e funções matemáticas
 
 Considerações finais do capítulo:
+Tem como objetivo separar o código JS do documento HTML e inserir através da tag <script>.
+Também foram apresentadas algumas funções matemáticas disponíveis na classe Math. Elas auxiliam na realização de cálculos onde é necessário arredondar valores com decimais, para cima ou para baixo.
+As técnicas trabalhadas no capítulo atual, permite avançar significativamente no processo de aprendizado da lógica em si, a partir desse ponto, nossos programas agora executam a entrada de dados interagindo com o usuário através de campos de formulários do documento HTML.
