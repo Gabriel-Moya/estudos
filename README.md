@@ -1,10 +1,3 @@
-# estudos
-# segunda linha de teste
-Os dois primeiro commits foram feitos via terminal do próprio git, agora será via vscode
-
-# teste em um segundo PC usando o git
-
-
 # Objetivo principal do repositório!
 Repositório criado unicamente para fins de estudos, inicialmente, havia criado para treinar alguns códigos em C da faculdade e tentar entender o funcionamento do github usando git para salvar esses arquivos, logo de início percebi o poder disso tudo e a mente explodiu com as possibilidades, a partir desse momento passei a alimentar o repositório com basicamente qualquer código que estudava, seja ele através de livros, cursos aleatórios do youtube, exercícios da faculdade e algumas ideias malucas que surgiam, logo, se vc está iniciando nesse mundo de programaçao, sinta-se a vontade de clonar esse repositório, seja para testar o git/github, ou qualquer outro motivo.
 
@@ -44,3 +37,55 @@ Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um 
 
 - calculo-simples.c
     > [Exercício 1010](https://www.urionlinejudge.com.br/judge/pt/problems/view/1010)
+
+- cedulas.c
+    > [Exercício 1018](https://www.urionlinejudge.com.br/judge/pt/problems/view/1018)
+
+## /estudos-JS <a name="estudos-js"></a>
+Inicialmente, somente exemplos e exercícios do livro _Lógica de Programação e Algoritmos com JavaScript_
+
+### /estudos-js/livro-novatec-js <a name="livro-novatec-js"></a>
+Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos abordados no livro, assim como seus capítulos e considerações finais.
+
+#### capitulo_1-introducao
+- ex1_1.html
+    > Saída de dados com alert().
+
+- ex1_2.html
+    > Entrada de dados com prompt().
+
+- ex1_3.html
+    > Operações envolvendo strings e números.
+
+- ex1_4.html
+    > String convertida em números.
+
+- ex1_5.html
+    > Tipos de Variáveis.
+
+- ex1_6.html
+    > Cálculo do dobro de um número.
+
+- ex1_7.html
+    > Conversão da entrada para número.
+
+- ex1_8.html
+    > Soma de dois números.
+
+- ex1_9.html
+    > Cálculo do valor de um jantar.
+
+- ex1_10.html
+    > Cálculo da duração de horas de uma viagem.
+
+- exercicio-a.html
+    > Elaborar um programa que leia um número. Calcule e informe os seus vizinhos, ou seja, o número anterior e posterior.
+
+- exercicio-b.html
+    > Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cada cliente.
+
+- exercicio-c.html
+    > Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as opções de pagamentos da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x.
+
+- exercicio-d.html
+    > Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.
