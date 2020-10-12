@@ -14,11 +14,21 @@ Anteriormente um estudante de Engenharia de Computação, porém com alguns cont
 # Sumário geral
 Para ambientar melhor o que contém no repositório, tentarei deixar o máximo de informação possível nessa parte de README.
 
-- :link: [codigos-uri](#codigos-uri)
-- :link: [estudos-em-c](#estudos-em-c)
-- :link: [estudos-JS](#estudos-js)
-    - :link: [livro-novatec-js](#livro-novatec-js)
+- [estudos-em-c](#estudos-em-c)
+    - [aleatorios](#aleatorios)
+    - [codigos-uri](#codigos-uri)
+- [estudos-JS](#estudos-js)
+    - [livro-novatec-js](#livro-novatec-js)
 
-## codigos-uri
+## /estudos-em-c <a name="estudos-em-c"></a>
+Alguns exercícios do URI e algumas ideias ou exercícios aleatórios que não fazem parte de nenhum estudo sequencial, usados apenas para treino de alguma teoria ou teste de funcionamento.
+
+### /estudos-em-c/aleatorios <a name="aleatorios"></a>
+- calculadora-conversao-moedas.c
+> Cálculo simples onde pede ao usuário a cotação atual do dólar e do guarani, insere o valor da venda em Reais e ele exibe o valor em Dólar e em Guarani.
+- cifra-de-cesar.c
+> Código apenas para cifragem de palavras de acordo com a cifra de César.
+
+### /estudos-em-c/codigos-uri <a name="codigos-uri"></a>
 Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um push somente para continuar em outro ambiente e etc...)
-- area-do-circulo.c [Exercício 1002](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002)
+- area-do-circulo.c ([Exercício 1002](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002))
