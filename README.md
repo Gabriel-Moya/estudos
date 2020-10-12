@@ -37,10 +37,10 @@ Alguns exercícios do URI e algumas ideias ou exercícios aleatórios que não f
 Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um push somente para continuar em outro ambiente e etc...)
 
 - area-do-circulo.c
-> [Exercício 1002](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002)
+    > [Exercício 1002](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002)
 
-area.c
-> [Exercício 1012](https://www.urionlinejudge.com.br/judge/pt/problems/view/1012)
+- area.c
+    > [Exercício 1012](https://www.urionlinejudge.com.br/judge/pt/problems/view/1012)
 
-calculo-simples.c
-> [Exercício 1010](https://www.urionlinejudge.com.br/judge/pt/problems/view/1010)
+- calculo-simples.c
+    > [Exercício 1010](https://www.urionlinejudge.com.br/judge/pt/problems/view/1010)
