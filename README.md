@@ -18,3 +18,7 @@ Para ambientar melhor o que contém no repositório, tentarei deixar o máximo d
 - :link: [estudos-em-c](#estudos-em-c)
 - :link: [estudos-JS](#estudos-js)
     - :link: [livro-novatec-js](#livro-novatec-js)
+
+## codigos-uri
+Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um push somente para continuar em outro ambiente e etc...)
+- area-do-circulo.c [Exercício 1002](https://www.urionlinejudge.com.br/judge/pt/problems/view/1002)
