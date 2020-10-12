@@ -14,7 +14,7 @@ Anteriormente um estudante de Engenharia de Computação, porém com alguns cont
 # Sumário geral
 Para ambientar melhor o que contém no repositório, tentarei deixar o máximo de informação possível nessa parte de README.
 
-:link: [codigos-uri](#codigos-uri)
-:link: [estudos-em-c](#estudos-em-c)
-:link: [estudos-JS](#estudos-js)
-    :link: [livro-novatec-js](#livro-novatec-js)
+- :link: [codigos-uri](#codigos-uri)
+- :link: [estudos-em-c](#estudos-em-c)
+- :link: [estudos-JS](#estudos-js)
+    - :link: [livro-novatec-js](#livro-novatec-js)
