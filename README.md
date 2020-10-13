@@ -15,21 +15,28 @@ Para ambientar melhor o que contém no repositório, tentarei deixar o máximo d
         - [capitulo_1-introducao](#capitulo_1-introducao)
         - [capitulo_2-integracao-com-html](#capitulo_2-integracao-com-html)
         - [capitulo_3-condicoes](#capitulo_3-condicoes)
+- [faculdade](#faculdade)
+    - [algoritmos-e-estruturas-de-dados-1](#algoed1)
+    - [lab-programacao-1](lab-prog-1)
+    - [lab-programacao-2](lab-prog-2)
 
-## /estudos-em-c <a name="estudos-em-c"></a>
+# /estudos-em-c <a name="estudos-em-c"></a>
 Alguns exercícios do URI e algumas ideias ou exercícios aleatórios que não fazem parte de nenhum estudo sequencial, usados apenas para treino de alguma teoria ou teste de funcionamento.
 
-### /estudos-em-c/aleatorios <a name="aleatorios"></a>
+## /estudos-em-c/aleatorios <a name="aleatorios"></a>
 - calculadora-conversao-moedas.c
     > Cálculo simples onde pede ao usuário a cotação atual do dólar e do guarani, insere o valor da venda em Reais e ele exibe o valor em Dólar e em Guarani.
 
 - cifra-de-cesar.c
     > Código apenas para cifragem de palavras de acordo com a cifra de César.
 
+- crivo-de-eratostenes.c
+    > Encontrar os primos em um intervalo pelo método de Eratóstenes.
+
 - main.c
     > Hello world básico, feito para testar compilação diretamente pelo VSCode.
 
-### /estudos-em-c/codigos-uri <a name="codigos-uri"></a>
+## /estudos-em-c/codigos-uri <a name="codigos-uri"></a>
 Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um push somente para continuar em outro ambiente e etc...)
 
 - area-do-circulo.c
@@ -83,13 +90,13 @@ Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um 
 - lanche.c
     > [Exercício 1038](https://www.urionlinejudge.com.br/judge/pt/problems/view/1038)
 
-## /estudos-JS <a name="estudos-js"></a>
+# /estudos-JS <a name="estudos-js"></a>
 Inicialmente, somente exemplos e exercícios do livro _Lógica de Programação e Algoritmos com JavaScript_
 
-### /estudos-js/livro-novatec-js <a name="livro-novatec-js"></a>
+## /estudos-js/livro-novatec-js <a name="livro-novatec-js"></a>
 Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos abordados no livro, assim como seus capítulos e considerações finais.
 
-#### capitulo_1-introducao <a name="capitulo_1-introducao">
+### capitulo_1-introducao <a name="capitulo_1-introducao">
 - ex1_1.html
     > Saída de dados com alert().
 
@@ -132,7 +139,7 @@ Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos ab
 - exercicio-d.html
     > Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.
 
-#### capitulo_2-integracao-com-html <a name="capitulo_2-integracao-com-html"></a>
+### capitulo_2-integracao-com-html <a name="capitulo_2-integracao-com-html"></a>
 - ex2_1.html
     > Documento HTML com campo de formulário.
 
@@ -166,4 +173,16 @@ Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos ab
 - exercicio-c
     > Um supermercado para aumentar suas vendas no setor de higiene fez uma promoção onde, na compra de 3 unidades de um produto, o terceiro terá 50% de desconto. Leia a descrição e o preço do produto, depois apresente as mensagens indicando a promoção.
 
-#### capitulo_3-condicoes <a name="capitulo_3-condicoes"></a>
+### capitulo_3-condicoes <a name="capitulo_3-condicoes"></a>
+
+# /faculdade <a name="faculdade"></a>
+Diretório criado com o objetivo de apresentar os exercícios aos professores e para sincronizar meu fluxo de estudos da faculdade com meu PC de casa, portanto, não estará tão detalhado como outros diretórios.
+
+## /faculdade/algoritmos-e-estruturas-de-dados-1 <a name="algoed1">
+Exercícios feitos em Portugol para a matéria de algortimos.
+
+## /faculdade/lab-programacao-1 <a name="lab-prog-1">
+Exercícios realizados em aula e listas de exercícios feitos em C.
+
+## /faculdade/lab-programacao-2 <a name="lab-prog-2">
+Exercícios realizados em aula e listas de exercícios feitos em C - Infelizmente interrompidos pelo COVID-19.
