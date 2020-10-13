@@ -17,8 +17,8 @@ Para ambientar melhor o que contém no repositório, tentarei deixar o máximo d
         - [capitulo_3-condicoes](#capitulo_3-condicoes)
 - [faculdade](#faculdade)
     - [algoritmos-e-estruturas-de-dados-1](#algoed1)
-    - [lab-programacao-1](lab-prog-1)
-    - [lab-programacao-2](lab-prog-2)
+    - [lab-programacao-1](#lab-prog-1)
+    - [lab-programacao-2](#lab-prog-2)
 
 # /estudos-em-c <a name="estudos-em-c"></a>
 Alguns exercícios do URI e algumas ideias ou exercícios aleatórios que não fazem parte de nenhum estudo sequencial, usados apenas para treino de alguma teoria ou teste de funcionamento.
