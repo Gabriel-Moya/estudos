@@ -41,6 +41,45 @@ Códigos resolvidos do URI (Nem todos podem estar 100% resolvidos, posso dar um 
 - cedulas.c
     > [Exercício 1018](https://www.urionlinejudge.com.br/judge/pt/problems/view/1018)
 
+- consumo.c
+    > [Exercício 1014](https://www.urionlinejudge.com.br/judge/pt/problems/view/1014)
+
+- conversao-de-tempo.c
+    > [Exercício 1019](https://www.urionlinejudge.com.br/judge/pt/problems/view/1019)
+
+- coordenadas-de-um-ponto.c
+    > [Exercício 1041](https://www.urionlinejudge.com.br/judge/pt/problems/view/1041)
+
+- diferenca.c
+    > [Exercício 1007](https://www.urionlinejudge.com.br/judge/pt/problems/view/1007)
+
+- distancia-entre-dois-pontos.c
+    > [Exercício 1015](https://www.urionlinejudge.com.br/judge/pt/problems/view/1015)
+
+- distancia.c
+    > [Exercício 1016](https://www.urionlinejudge.com.br/judge/pt/problems/view/1016)
+
+- esfera.c
+    > [Exercício 1011](https://www.urionlinejudge.com.br/judge/pt/problems/view/1011)
+
+- extrememamente-basico.c
+    > [Exercício 1001](https://www.urionlinejudge.com.br/judge/pt/problems/view/1001)
+
+- formula-de-bhaskara.c
+    > [Exercício 1036](https://www.urionlinejudge.com.br/judge/pt/problems/view/1036)
+
+- gasto-combustivel.c
+    > [Exercício 1017](https://www.urionlinejudge.com.br/judge/pt/problems/view/1017)
+
+- idade-em-dias.c
+    > [Exercício 1020](https://www.urionlinejudge.com.br/judge/pt/problems/view/1020)
+
+- intervalo.c
+    > [Exercício 1037](https://www.urionlinejudge.com.br/judge/pt/problems/view/1037)
+
+- lanche.c
+    > [Exercício 1038](https://www.urionlinejudge.com.br/judge/pt/problems/view/1038)
+
 ## /estudos-JS <a name="estudos-js"></a>
 Inicialmente, somente exemplos e exercícios do livro _Lógica de Programação e Algoritmos com JavaScript_
 
