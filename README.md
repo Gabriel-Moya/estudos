@@ -12,6 +12,9 @@ Para ambientar melhor o que contém no repositório, tentarei deixar o máximo d
     - [codigos-uri](#codigos-uri)
 - [estudos-JS](#estudos-js)
     - [livro-novatec-js](#livro-novatec-js)
+        - [capitulo_1-introducao](#capitulo_1-introducao)
+        - [capitulo_2-integracao-com-html](#capitulo_2-integracao-com-html)
+        - [capitulo_3-condicoes](#capitulo_3-condicoes)
 
 ## /estudos-em-c <a name="estudos-em-c"></a>
 Alguns exercícios do URI e algumas ideias ou exercícios aleatórios que não fazem parte de nenhum estudo sequencial, usados apenas para treino de alguma teoria ou teste de funcionamento.
@@ -86,7 +89,7 @@ Inicialmente, somente exemplos e exercícios do livro _Lógica de Programação 
 ### /estudos-js/livro-novatec-js <a name="livro-novatec-js"></a>
 Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos abordados no livro, assim como seus capítulos e considerações finais.
 
-#### capitulo_1-introducao
+#### capitulo_1-introducao <a name="capitulo_1-introducao">
 - ex1_1.html
     > Saída de dados com alert().
 
@@ -129,7 +132,7 @@ Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos ab
 - exercicio-d.html
     > Elaborar um programa que leia 2 notas de um aluno em uma disciplina. Calcule e informe a média das notas.
 
-#### capitulo_2-integracao-com-html
+#### capitulo_2-integracao-com-html <a name="capitulo_2-integracao-com-html"></a>
 - ex2_1.html
     > Documento HTML com campo de formulário.
 
@@ -162,3 +165,5 @@ Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos ab
 
 - exercicio-c
     > Um supermercado para aumentar suas vendas no setor de higiene fez uma promoção onde, na compra de 3 unidades de um produto, o terceiro terá 50% de desconto. Leia a descrição e o preço do produto, depois apresente as mensagens indicando a promoção.
+
+#### capitulo_3-condicoes <a name="capitulo_3-condicoes"></a>
