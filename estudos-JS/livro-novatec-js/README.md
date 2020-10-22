@@ -46,3 +46,18 @@ Considerações finais do capítulo:
 Tem como objetivo separar o código JS do documento HTML e inserir através da tag <script>.
 Também foram apresentadas algumas funções matemáticas disponíveis na classe Math. Elas auxiliam na realização de cálculos onde é necessário arredondar valores com decimais, para cima ou para baixo.
 As técnicas trabalhadas no capítulo atual, permite avançar significativamente no processo de aprendizado da lógica em si, a partir desse ponto, nossos programas agora executam a entrada de dados interagindo com o usuário através de campos de formulários do documento HTML.
+
+# Capitulo 3 - Condições
+
+- If... Else
+- Operadores relacionais
+- Operadores lógicos
+- Switch... Case
+- Operador ternário
+- Exemplos
+- Exercícios
+
+Considerações finais do capítulo:
+Podemos ver a importância das estruturas condicionais no processo de construção de um programa e/ou algoritmo, com elas podemos liberar ou negar o acesso a uma área restrita, por exemplo, fazer controle de exibição de mensagens, validar um campo se foi preenchido corretamente ou não.
+Em algumas situações, exige a definição de várias comparações, para atendermos a esse requisito é necessário utilizarmos os operadores lógicos que são: not (!), and (&&), e or (||).
+Foi apresentado um exemplo com a programação de duas funções, uma para realizar o cálculo dos dados inseridos pelo usuário e outra para limpar os conteúdos e preparar o programa para uma nova interação com o usuário.
