@@ -20,6 +20,11 @@ function doWhile() {
         pares = pares + ", " + i;
     }
 
-    //exibe lista dos números pares
-    alert(pares);
+    //Exibe lista dos números pares
+    if (num == 1) {
+        alert(pares + " Não há pares nesse intervalo.")
+    } else {
+        alert(pares);
+    }
+    
 }
