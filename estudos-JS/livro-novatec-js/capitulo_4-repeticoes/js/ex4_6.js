@@ -12,6 +12,7 @@ function verificarPrimo() {
         return;
     }
 
+    /*--------------------Primeira possibilidade--------------------
     var numDivisores = 0;
 
     //Percorre todos os possíveis divisores do número
@@ -23,6 +24,26 @@ function verificarPrimo() {
 
     //Se possuir apenas 2 divisores, o número é primo
     if (numDivisores == 2) {
+        outResposta.textContent = num + " É primo";
+    } else {
+        outResposta.textContent = num + " Não é primo";
+    }
+    --------------------Primeira possibilidade--------------------*/
+
+    /*--------------------Segunda possibilidade--------------------*/
+    //Variável flag
+    var temDivisor = 0;
+    
+    //Percorre os possíveis divisores do num
+    for (var i=2; i<=num; i++) {
+        if (num%i == 0) {
+            temDivisor = 1; //Muda a flag
+            break;
+        }
+    }
+
+    //Se num > 1 e não possuir divisor
+    if (num>1 && !temDivisor) {
         outResposta.textContent = num + " É primo";
     } else {
         outResposta.textContent = num + " Não é primo";
