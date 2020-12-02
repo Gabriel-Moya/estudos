@@ -21,5 +21,5 @@ conta2.agencia = 102;
 let valor = 200;
 contaCorrenteGabriel.transferir(valor, conta2);
 
-console.log("valor: ", valor);
-console.log(conta2);
+//conta2.saldo = 30000; <=== Retorna erro
+console.log(conta2.saldo);
