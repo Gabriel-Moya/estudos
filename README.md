@@ -12,6 +12,9 @@ Para ambientar melhor o que contém no repositório, tentarei deixar o máximo d
         - [capitulo_1-introducao](#capitulo_1-introducao)
         - [capitulo_2-integracao-com-html](#capitulo_2-integracao-com-html)
         - [capitulo_3-condicoes](#capitulo_3-condicoes)
+    - [alura](#alura)
+        - [javascript-introducao](#javascript-introducao)
+        - [javascript-poo](#javascript-poo)
 - [faculdade](#faculdade)
     - [algoritmos-e-estruturas-de-dados-1](#algoed1)
     - [lab-programacao-1](#lab-prog-1)
@@ -171,6 +174,12 @@ Dentro do README.md da pasta **/estudos-js/livro-novatec-js** há os assuntos ab
     > Um supermercado para aumentar suas vendas no setor de higiene fez uma promoção onde, na compra de 3 unidades de um produto, o terceiro terá 50% de desconto. Leia a descrição e o preço do produto, depois apresente as mensagens indicando a promoção.
 
 ### capitulo_3-condicoes <a name="capitulo_3-condicoes"></a>
+
+## /estudos-js/alura <a name="alura">
+
+### javascript-introducao <a name="javascript-introducao">
+
+### javascript-poo <a name="javascript-poo">
 
 # /faculdade <a name="faculdade"></a>
 Diretório criado com o objetivo de apresentar os exercícios aos professores e para sincronizar meu fluxo de estudos da faculdade com meu PC de casa, portanto, não estará tão detalhado como outros diretórios.
