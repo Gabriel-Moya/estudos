@@ -96,7 +96,7 @@
         </main>
 
         <footer class="rodape">
-            Gabriel Moya 2021
+            Gabriel Moya <?= date('Y'); ?>
         </footer>
 
     </body>
