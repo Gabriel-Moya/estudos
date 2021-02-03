@@ -4,11 +4,11 @@ body.exercicio {
     "cabecalho"
     "navegacao"
     "principal"
-    "rodape"
+    "rodape";
 }
 
 .principal {
-    height: calc(100vh -240px);
+    height: calc(100vh - 240px);
 }
 
 .navegacao {
