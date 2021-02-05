@@ -67,6 +67,11 @@
                                     Operações aritméticas
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=string">
+                                    Strings
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
