@@ -62,6 +62,11 @@
                                     Tipo float (Números reais)
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=aritmeticas">
+                                    Operações aritméticas
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
