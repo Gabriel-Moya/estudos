@@ -82,6 +82,11 @@
                                     Tipo booleano
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=conversoes">
+                                    Conversões
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
