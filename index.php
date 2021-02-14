@@ -112,6 +112,16 @@
                                     Interpolacao
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=variaveis_variaveis">
+                                    Variáveis variáveis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=desafio_variaveis">
+                                    Desafio variáveis
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
