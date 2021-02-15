@@ -38,11 +38,9 @@
     
     if($t1 == true && $t2 == true) {
         echo "TV 50' e sorvete";
-    } else if ($t1 == false && $t2 == true) {
+    } else if ($t1 xor $t2) {
         echo "TV 32' e sorvete";
-    } else if ($t1 == true && $t2 == false) {
-        echo "TV 32' e sorvete";
-    } else if ($t1 == false && $t2 == false) {
+    }else if ($t1 == false && $t2 == false) {
         echo "Fica em casa mais saudável";
     }
     
