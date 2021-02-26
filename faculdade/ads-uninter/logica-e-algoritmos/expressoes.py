@@ -1,0 +1,7 @@
+print('A) O somatório dos 5 primeiros inteiros e positivos é =', 1+2+3+4+5)
+print('B) A média de 23, 19 e 31 é =', (23+19+31)/3)
+print('C) 73 cabe %d vezes dentro de 403' %(403//73))
+print('D) O resto de 403/73 é =', 403%73)
+print('E) 2¹⁰ é =', 2**10)
+print('F) O valor absoluto da diferença entre 54 e 57 é =', abs(54-57))
+print('G) O menor valor entre 34, 29 e 31 é =', min(34,29,31))
