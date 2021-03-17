@@ -1,39 +1,9 @@
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
-# FALTA TERMINAR ESSA COISA AQUI
-# ESTÁ QUASE PRONTO
-
 codigo = int(input('Digite um número inteiro de 5 dígitos (Entre 10000 e 30000): '))
 
 def verificaInput(codigo):
     entrada = codigo
     if((entrada < 10000 or entrada > 30000) and (entrada // 1 != entrada)):
-        print('Por favor, tente novamente com um número válido, não sabe ler não? Seu idiota')
+        print('Por favor, tente novamente com um número válido.')
     else:
         print('Prossiga')
 
