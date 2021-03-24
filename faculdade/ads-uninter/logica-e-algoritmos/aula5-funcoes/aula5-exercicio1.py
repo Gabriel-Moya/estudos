@@ -21,6 +21,7 @@ def validaInt(pergunta, min, max):
     x = int(input(pergunta))
     while ((x < min) or (x > max)):
         x = int(input(pergunta))
+    return x
 
 x = validaInt('Digite um número para calcular o fatorial: ', 0, 99999)
 print('{}! = {}'.format(x, calculaFatorial(x)))
