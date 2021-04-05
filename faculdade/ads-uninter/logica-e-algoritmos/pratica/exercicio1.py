@@ -16,6 +16,7 @@ while select != 0:
     nome = input('Digite o nome do lutador: ')
     peso = float(input('Digite o peso (em kg): '))
 
+    # Define a categoria do lutador
     if (peso < 65):
         categoria = ('Pena')
     elif (peso >= 65 and peso < 72):
@@ -33,5 +34,6 @@ while select != 0:
 
     cls()
 
+    # Exibição dos dados
     print('\nNome fornecido: {}\nPeso fornecido: {}'.format(nome, peso))
     print('O lutador {} pesa {}kg e se enquadra na categoria {}'.format(nome, peso, categoria))

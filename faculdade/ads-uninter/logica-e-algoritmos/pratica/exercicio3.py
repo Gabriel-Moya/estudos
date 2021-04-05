@@ -18,6 +18,7 @@ qtd_alunos = int(input('Digite a quantidade de alunos que irá inserir: '))
 
 for aluno in range (qtd_alunos):
     cls()
+    # Captura das informações
     nome_aluno = input('Digite o nome do aluno: ')
 
     nota1 = float(input('Insira a nota 1: '))
@@ -26,6 +27,7 @@ for aluno in range (qtd_alunos):
     nota4 = float(input('Insira a nota 4: '))
     media = (nota1 + nota2 + nota3 + nota4)/4
 
+    # Preenche os campos com as informações capturadas
     alunos['nome'].append(nome_aluno)
     alunos['notas'].append([nota1, nota2, nota3, nota4])
     alunos['media'].append(media)
@@ -37,6 +39,7 @@ for aluno in range (qtd_alunos):
 
 cls()
 
+# Exibe informações para o usuários
 print('Nomes | Notas | Média | Situação')
 print('- ' * 10)
 
