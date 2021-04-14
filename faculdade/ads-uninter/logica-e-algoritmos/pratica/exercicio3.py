@@ -25,7 +25,7 @@ for aluno in range (qtd_alunos):
     nota2 = float(input('Insira a nota 2: '))
     nota3 = float(input('Insira a nota 3: '))
     nota4 = float(input('Insira a nota 4: '))
-    media = (nota1 + nota2 + nota3 + nota4)/4
+    media = round(((nota1 + nota2 + nota3 + nota4)/4), 1)
 
     # Preenche os campos com as informações capturadas
     alunos['nome'].append(nome_aluno)

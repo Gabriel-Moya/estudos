@@ -2,10 +2,10 @@ codigo = int(input('Digite um número inteiro de 5 dígitos (Entre 10000 e 30000
 
 def verificaInput(codigo):
     entrada = codigo
-    if((entrada < 10000 or entrada > 30000) and (entrada // 1 != entrada)):
-        print('Por favor, tente novamente com um número válido.')
+    if((entrada < 10000 or entrada > 30000) or (entrada // 1 != entrada)):
+        return False
     else:
-        print('Prossiga')
+        return True
 
 def digitoVerificador(codigo):
 
@@ -28,7 +28,8 @@ def digitoVerificador(codigo):
 
     return verificador
 
-verificaInput(codigo)
-
 # Exibição do resultado
-print('{}-{}'.format(codigo,digitoVerificador(codigo)))
+if verificaInput(codigo) == True:
+    print('{}-{}'.format(codigo,digitoVerificador(codigo)))
+elif verificaInput(codigo) == False:
+    print('Por favor, tente novamente com um número válido.')
