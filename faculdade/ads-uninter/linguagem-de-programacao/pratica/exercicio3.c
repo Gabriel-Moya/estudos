@@ -9,7 +9,7 @@ int main(){
     // Laço para encerrar quando valor digitado for negativo
     while(1){
 
-        printf("Digite um valor negativo para encerrar a execução");
+        printf("\nDigite um valor negativo para encerrar a execucao\n");
 
         // Captura matriz A
         printf("Preencha a matriz A\n");
