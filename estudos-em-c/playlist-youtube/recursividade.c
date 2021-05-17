@@ -1,13 +1,24 @@
 #include <stdio.h>
 
-void imprimir(int x){
+void imprimeDecrescente(int x){
     
     if(x == 0){
         printf("%d ", x);
     }
     else{
         printf("%d ", x);
-        imprimir(x - 1);
+        imprimeDecrescente(x - 1);
+    }
+}
+
+void imprimeCrescente(int x){
+    
+    if(x == 0){
+        printf("%d ", x);
+    }
+    else{
+        imprimeCrescente(x - 1);
+        printf("%d ", x);
     }
 }
 
@@ -18,7 +29,9 @@ int main() {
     printf("Digite um valor maior que zero: ");
     scanf("%d", &n);
 
-    imprimir(n);
+    imprimeDecrescente(n);
+    printf("\n");
+    imprimeCrescente(n);
 
     return 0;
 }
