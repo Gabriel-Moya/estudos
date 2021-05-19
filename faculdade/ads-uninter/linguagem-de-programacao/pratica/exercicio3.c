@@ -62,21 +62,25 @@ int main(){
         // Chamada do procedimento para soma de matrizes
         calc_soma(&mat_A, &mat_B, &mat_C);
 
+        // Exibe matriz C
+        printf("\nMATRIZ C\n");
+        for (int i = 0; i < 4; i++){
+            for (int j = 0; j < 4; j++){
+                printf("%2d ", mat_C[i][j]);
+            }
+            printf("\n");
+        }
+
     }
 
     return 0;
 }
 
-// Procedimento para soma e exibição da matriz C
+// Procedimento para soma da matriz A mais a matriz B
 void calc_soma(int *mat_A, int *mat_B, int *mat_C){
 
-    printf("\nMATRIZ C");
     for (int i = 0; i < 16; i++){
         mat_C[i] = mat_A[i] + mat_B[i];
-        if(i % 4 == 0){
-            printf("\n");
-        }
-        printf("%2d ", mat_C[i]);
     }
 
     return;
