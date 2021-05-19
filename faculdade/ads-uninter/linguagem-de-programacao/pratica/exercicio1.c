@@ -28,7 +28,7 @@ int main(){
 
     p = &funcionario;
 
-    //Verifica alíquotas
+    //Verifica alíquotas através do ponteiro
     if ((*p).salario <= 1903.98){
         aliquota = 0;
     } else if ((*p).salario >= 1903.99 && (*p).salario <= 2826.65){
@@ -41,7 +41,7 @@ int main(){
         aliquota = 27.5;
     }
 
-    // Calculo do imposto
+    // Cálculo do imposto
     imposto = (((*p).salario)*aliquota)/100;
 
     // Exibe dados formatados

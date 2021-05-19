@@ -14,7 +14,7 @@ int main(){
 
     ptr = &ru;
 
-    // Soma dos dígitos
+    // Soma dos dígitos através do ponteiro
     for (int i = 0; i < 7; i++){
         soma += *ptr;
         ptr++;

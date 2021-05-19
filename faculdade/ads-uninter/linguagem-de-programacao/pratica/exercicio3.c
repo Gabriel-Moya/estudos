@@ -76,7 +76,7 @@ int main(){
     return 0;
 }
 
-// Procedimento para soma da matriz A mais a matriz B
+// Procedimento para soma da matriz A + matriz B
 void calc_soma(int *mat_A, int *mat_B, int *mat_C){
 
     for (int i = 0; i < 16; i++){
