@@ -15,3 +15,4 @@ let sobrenomeAluno = null; // nulo -> Possui um valor nulo
 
 // Booleano
 const aprovado = true; // Valores lógicos
+const aprovado = false; // Valores lógicos
