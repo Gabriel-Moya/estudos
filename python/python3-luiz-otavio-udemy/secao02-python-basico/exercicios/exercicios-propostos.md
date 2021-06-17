@@ -1,5 +1,5 @@
 # Exercícios propostos
-1 - Faça um programa que peça para o usuário digitar um número inteiro, informe se estee número é par ou ímpar. Caso o usuário não digite um inteiro, informe que não é um número inteiro
+1 - Faça um programa que peça para o usuário digitar um número inteiro, informe se este número é par ou ímpar. Caso o usuário não digite um inteiro, informe que não é um número inteiro
 
 2 - Faça um programa que pergunte a hora ao usuário e, baseando-se no horário descrito, exiba a saudação apropriada. Exemplo:
 Bom dia 0 - 11, Boa tarde 12-17 e Boa noite 18-23.
