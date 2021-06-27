@@ -26,6 +26,16 @@ body {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 690px) {
+  .container {
+    max-width: 640px;
+    margin: 20px 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
 form input, form label, form button {
   display: block;
   width: 100%;
