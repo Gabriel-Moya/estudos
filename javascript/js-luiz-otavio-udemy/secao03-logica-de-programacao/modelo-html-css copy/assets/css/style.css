@@ -57,11 +57,31 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-.paragrafo-resultado, .bad {
+.paragrafo-resultado, .bad, .baixo, .sobrepeso, .ob1, .ob2, .ob3 {
   background: rgb(109, 255, 182);
   padding: 10px 20px;
 }
 
 .bad {
   background: rgb(255, 150, 150);
+}
+
+.baixo {
+  background: rgb(241, 255, 113);
+}
+
+.sobrepeso {
+  background: rgb(255, 188, 188);
+}
+
+.ob1 {
+  background: rgb(255, 161, 72);
+}
+
+.ob2 {
+  background: rgb(255, 72, 72);
+}
+
+.ob3 {
+  background: rgb(255, 18, 18);
 }
