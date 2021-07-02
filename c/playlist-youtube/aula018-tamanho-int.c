@@ -9,9 +9,9 @@ int main() {
 
     int x = 2147483647;
 
-    printf("Valor de X = %d", x);
+    printf("Valor de X = %d\n", x);
     x++;
-    printf("Valor de X = %d", x);
+    printf("Valor de X = %d\n", x);
 
     // 4 * 8 = 32 bits
 
