@@ -1,3 +1,7 @@
+// For - Geralmente usado com iteráveis (arrays ou strings)
+// For in - Retorna o índice ou chave (strings, arrays ou objetos)
+// For of - Retorna o valor em si (iteráveis, arrays ou strings)
+
 const nome = 'Gabriel Moya';
 
 for (let valor of nome) {
