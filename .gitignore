@@ -6,5 +6,8 @@ workspace.code-workspace
 *.o
 *.exe
 
+# Python
+.idea
+
 # Java/Eclipse
 .metadata
