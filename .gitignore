@@ -1,4 +1,10 @@
-*.o
-*.exe
+# Configurações locais do VSCode
 *.vscode
 workspace.code-workspace
+
+# C
+*.o
+*.exe
+
+# Java/Eclipse
+.metadata
