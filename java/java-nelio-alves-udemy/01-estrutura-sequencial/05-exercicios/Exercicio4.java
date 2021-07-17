@@ -30,13 +30,15 @@ public class Exercicio4 {
 		System.out.println("Digite a quantidade de horas trabalhadas:");
 		hoursWorking = sc.nextInt();
 		
-		System.out.println("Valor da hora do funcionário:");
+		System.out.println("Valor da hora do funcionï¿½rio:");
 		valueHour = sc.nextDouble();
 		
 		salary = hoursWorking*valueHour;
 		
 		System.out.printf("NUMBER = %d\n", number);
 		System.out.printf("SALARY = U$ %.2f\n", salary);
+
+		sc.close();
 
 	}
 
