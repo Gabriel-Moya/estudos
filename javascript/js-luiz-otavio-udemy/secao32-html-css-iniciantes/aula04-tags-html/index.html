@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML para texto</title>
+
+    <style>
+        .img {
+            width: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Cabeçalho1</h1>
+    <h1>Cabeçalho2</h1>
+    <p>
+        Est ac <b>interdum</b> class <strong>ultricies</strong> in class <i>luctus</i> vehicula, <em>lobortis</em> mauris <del>maecenas</del> <ins>nulla</ins> in vestibulum. Est ac interdum class ultricies in <s>class</s> <u>luctus</u> vehicula, lobortis <small>maecenas</small> 2<sup>2</sup> H<sub>2</sub>O nulla in vestibulum.
+        <br>
+        <q>Est ac interdum class ultricies in class luctus vehicula, lobortis mauris maecenas nulla in vestibulum.</q>
+    
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a" target="_blank">
+            <img class="img" src="https://seeklogo.com/images/M/mdn-logo-6DB9B0093F-seeklogo.com.png" alt="Logo da MDN">
+        </a>
+    </p>
+
+    <hr>
+
+    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+        <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+    </blockquote>
+
+    
+        <pre>
+            <code>
+            const pessoa = {
+                nome: 'Gabriel',
+                sobrenome: 'Moya',
+                endereco: {
+                    rua: 'Av. fulano de tal',
+                    numero: 320
+                }
+            };
+            
+            // Atribuição via desestruturação
+            const { nome, sobrenome, endereco: { rua, numero } } = pessoa;
+            console.log(nome, sobrenome, rua, numero)
+            
+            </code>
+        </pre>
+
+    <div>
+        <p>
+            Est ac interdum class ultricies in class luctus vehicula, lobortis mauris maecenas nulla in vestibulum. Est ac interdum class ultricies in class luctus vehicula, lobortis mauris maecenas nulla in vestibulum. Est ac interdum class ultricies in class luctus vehicula, lobortis mauris maecenas nulla in vestibulum.
+        </p>
+    </div>
+
+</body>
+
+</html>
