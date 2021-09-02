@@ -1,0 +1,85 @@
+<!--Criar somente a estrutura da página inicial da Netflix, antes de fazer o login-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/3064770e-4281-4471-b539-b1dc98d164a5/BR-pt-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+        background-size: cover ;
+    }
+
+    #headerMain {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #headerMain h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    #headerMain h1 a {
+        color: red;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+
+    #content {
+        color: white;
+    }
+
+    #content h1, h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #content form h3, form div{
+        display: flex;
+        justify-content: center;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Netflix</title>
+</head>
+
+<body>
+
+    <header id="headerMain">
+        <h1>
+            <a href="#">Netflix</a>
+        </h1>
+        <button id="login">ENTRAR</button>
+    </header>
+
+    <section id="main">
+        <div id="content">
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <h2>Assista onde quiser. Cancele quando quiser.</h2>
+            <form action="">
+                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit">Vamos lá</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
