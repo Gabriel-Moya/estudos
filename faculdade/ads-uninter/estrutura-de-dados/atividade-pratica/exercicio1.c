@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*=====================DEFINE ESTRUTURA DOS DADOS=====================*/
 typedef struct Musics {
     char musicName[30];
     char artist[30];
@@ -9,11 +10,13 @@ typedef struct Musics {
     struct Musics* next;
 } Musics;
 
+/*=====================DEFINE ESTRUTURA DA LISTA=====================*/
 typedef struct {
     Musics* start;
     int sizeList;
 } List;
 
+/*=====================CABEÇALHOS DE FUNÇÕES E PROCEDIMENTOS=====================*/
 void menu();
 void insertMusic(List* list, char* music, char* artist, int time);
 void listMusics(List* list);
@@ -22,11 +25,12 @@ int main() {
 
     List list;
     int option, time;
-    char music[30], artist[30], c;
+    char music[30], artist[30], c; // c = variável utilizada para limpeza do buffer do teclado quando necessário
 
     list.start = NULL;
     list.sizeList = 0;
 
+    /*=====================LAÇO DE REPETIÇÃO PARA A CHAMADA DO MENU=====================*/
     do{
         menu();
         scanf("%d", &option);
@@ -41,7 +45,7 @@ int main() {
             printf("Digite o nome do artista: ");
             gets(&artist);
 
-            printf("Digite o tempo de duracao da musica: ");
+            printf("Digite o tempo de duracao da musica (no formato mmss): ");
             scanf("%d", &time);
 
             insertMusic(&list, &music, &artist, time);
@@ -76,6 +80,7 @@ void menu() {
 }
 
 
+/*=====================INSERÇÃO DE NOVAS MÚSICAS=====================*/
 void insertMusic(List* list, char* music, char* artist, int time) {
     Musics* newMusic = (Musics*)malloc(sizeof(Musics));
     strcpy(newMusic->musicName, music);
@@ -87,13 +92,14 @@ void insertMusic(List* list, char* music, char* artist, int time) {
 }
 
 
+/*=====================IMPRESSÃO DA LISTA CONTENDO AS MÚSICAS=====================*/
 void listMusics(List* list) {
     Musics* start = list->start;
     printf("Lista de musicas:\n");
     printf("Musica | Artista | Tempo de duracao\n");
 
     while (start != NULL) {
-        printf("%s | %s | %d\n", start->musicName, start->artist, start->time);
+        printf("%s | %s | %dmin %ds\n", start->musicName, start->artist, (start->time)/100, (start->time)%100);
         start = start->next;
     }
 
