@@ -1,11 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(){
+void binario(int n){
+    if(n == 0)
+        printf("%d", n);
+    else{
+        binario(n/2);
+        printf("%d", n % 2);
+    }
+}
 
-    double inDecimal, outBinario;
+int main () {
 
-    printf("Digite um número real, com numeros apos a virgula");
-    scanf("%lf", &inDecimal);
+    int n;
+
+    printf("Digite um valor decimal: ");
+    scanf("%d",&n);
+
+    printf("Binário: ");
+    binario(n);
+    printf("\n");
 
     return 0;
 }
