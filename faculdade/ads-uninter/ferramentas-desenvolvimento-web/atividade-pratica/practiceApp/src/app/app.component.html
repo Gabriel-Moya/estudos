@@ -1,0 +1,42 @@
+<div class="mt-5">
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a href="#" class="nav-link active" data-toggle="tab">Lista de Alunos</a>
+    </li>
+  </ul>
+
+  <!-- Conteudo das abas -->
+  <div class="tab-content">
+
+    <div id="#" class="container tab-pane active"><br>
+      <h3>Agenda</h3>
+
+      <table class='table table-striped'>
+
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>RU</th>
+            <th>Curso</th>
+            <th>Data de Nascimento</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <ng-container>
+            <tr *ngFor="let aluno of lista_alunos">
+              <td>{{ aluno.nome }}</td>
+              <td>{{ aluno.ru }}</td>
+              <td>{{ aluno.curso }}</td>
+              <td>{{ aluno.aniversario }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+</div>
