@@ -1,0 +1,43 @@
+<div class="mt-5">
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a href="#pago" class="nav-link active" data-toggle="tab">Faturas pagas</a>
+    </li>
+    <li class="nav-item">
+      <a href="#aberto" class="nav-link" data-toggle="tab">Faturas em aberto</a>
+    </li>
+  </ul>
+
+  <!-- Conteudo das abas -->
+  <div class="tab-content">
+
+    <div id="pago" class="container tab-pane active"><br>
+      <h3>FATURAS PAGAS</h3>
+      <ol>
+        <li *ngFor="let fatura of lista_faturas">
+          Empresa:  {{ fatura.empresa }}
+        </li>
+      </ol>
+
+    </div>
+
+    <div id="aberto" class="container tab-pane fade"><br>
+      <h3>FATURAS EM ABERTO</h3>
+      <table class="table table-striped">
+        <tr>
+          <td>Fornecedor</td>
+          <td>Valor</td>
+          <td>DT vencto</td>
+        </tr>
+        <tr>
+          <td>Industria de cimentos SA</td>
+          <td>8.150,00</td>
+          <td>14/03/2021</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>
