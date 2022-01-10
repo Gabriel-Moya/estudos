@@ -9,7 +9,7 @@ int main() {
 
     float x, y;
 
-    scanf("%f %f", &x, &y);
+    scanf("%.1f %.1f", &x, &y);
 
     if (x == 0 && y == 0) {
         printf("Origem\n");
