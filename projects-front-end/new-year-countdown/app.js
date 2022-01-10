@@ -2,9 +2,12 @@ const secondsContainer = document.querySelector("#seconds");
 const minutesContainer = document.querySelector("#minutes");
 const hoursContainer = document.querySelector("#hours");
 const daysContainer = document.querySelector("#days");
+const nextYearContainer = document.querySelector("#year");
 
 const nextYear = new Date().getFullYear() + 1;
 const newYearTIme = new Date(`January 01 ${nextYear} 00:00:00`);
+
+nextYearContainer.textContent = nextYear;
 
 const updateCountdown = () => {
   const currentTime = new Date();
