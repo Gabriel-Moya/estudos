@@ -1,6 +1,6 @@
 /*----------------------------------------*/
-/*Exercício 1044 do URI*/
-/*https://www.urionlinejudge.com.br/judge/pt/problems/view/1044*/
+/*Exercício 1042 do URI*/
+/*https://www.urionlinejudge.com.br/judge/pt/problems/view/1042*/
 /*----------------------------------------*/
 
 #include <stdio.h>
