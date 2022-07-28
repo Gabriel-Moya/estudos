@@ -15,5 +15,15 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Contact List 1.0.\nWritten by: Gabriel Moya", "About");
+        }
     }
 }
