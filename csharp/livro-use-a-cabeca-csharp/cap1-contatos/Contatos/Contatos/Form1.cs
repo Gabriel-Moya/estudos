@@ -25,5 +25,25 @@ namespace WindowsFormsApplication1
         {
             MessageBox.Show("Contact List 1.0.\nWritten by: Gabriel Moya", "About");
         }
+
+        private void peopleBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.peopleBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.contactDBDataSet);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'contactDBDataSet.People' table. You can move, or remove it, as needed.
+            this.peopleTableAdapter.Fill(this.contactDBDataSet.People);
+
+        }
+
+        private void clientCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
