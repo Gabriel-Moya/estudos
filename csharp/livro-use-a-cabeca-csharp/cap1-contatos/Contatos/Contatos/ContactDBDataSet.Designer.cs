@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WindowsFormsApplication1 {
+namespace Contatos {
     
     
     /// <summary>
@@ -851,7 +851,7 @@ namespace WindowsFormsApplication1 {
         }
     }
 }
-namespace WindowsFormsApplication1.ContactDBDataSetTableAdapters {
+namespace Contatos.ContactDBDataSetTableAdapters {
     
     
     /// <summary>
@@ -1017,7 +1017,7 @@ namespace WindowsFormsApplication1.ContactDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlServerCe.SqlCeConnection();
-            this._connection.ConnectionString = global::WindowsFormsApplication1.Properties.Settings.Default.ContactDBConnectionString;
+            this._connection.ConnectionString = global::Contatos.Properties.Settings.Default.ContactDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

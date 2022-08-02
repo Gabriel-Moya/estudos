@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace Contatos
 {
     partial class Form1
     {
@@ -38,10 +38,10 @@
             System.Windows.Forms.Label clientLabel;
             System.Windows.Forms.Label lastCallLabel;
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.contactDBDataSet = new WindowsFormsApplication1.ContactDBDataSet();
+            this.contactDBDataSet = new Contatos.ContactDBDataSet();
             this.peopleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.peopleTableAdapter = new WindowsFormsApplication1.ContactDBDataSetTableAdapters.PeopleTableAdapter();
-            this.tableAdapterManager = new WindowsFormsApplication1.ContactDBDataSetTableAdapters.TableAdapterManager();
+            this.peopleTableAdapter = new Contatos.ContactDBDataSetTableAdapters.PeopleTableAdapter();
+            this.tableAdapterManager = new Contatos.ContactDBDataSetTableAdapters.TableAdapterManager();
             this.peopleBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -105,7 +105,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.PeopleTableAdapter = this.peopleTableAdapter;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApplication1.ContactDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = Contatos.ContactDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // peopleBindingNavigator
             // 
