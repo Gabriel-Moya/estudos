@@ -11,3 +11,12 @@ workspace.code-workspace
 
 # Java/Eclipse
 .metadata
+
+# Configs VS and C#
+*.suo
+*.vs/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
