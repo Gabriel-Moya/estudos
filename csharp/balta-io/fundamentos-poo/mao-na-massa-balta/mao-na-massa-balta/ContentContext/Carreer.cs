@@ -2,5 +2,6 @@
 {
     public class Carreer : Content
     {
+        public int Courses { get; set; }
     }
 }
