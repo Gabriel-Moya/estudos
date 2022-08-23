@@ -34,7 +34,7 @@ namespace mao_na_massa_balta
 
             var careers = new List<Career>();
             var careerDotnet = new Career("Especialista .NET", "especialista-dotnet");
-            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", courseOOP);
+            var careerItem2 = new CareerItem(2, "Aprenda OOP", "", null);
             var careerItem = new CareerItem(1, "Comece por aqui", "", courseCsharp);
             var careerItem3 = new CareerItem(3, "Aprenda .NET", "", courseAspNet);
 
@@ -50,8 +50,12 @@ namespace mao_na_massa_balta
                 foreach (var item in career.Items.OrderBy(x => x.Order))
                 {
                     Console.WriteLine($"\t{item.Order} - {item.Title}");
-                    Console.WriteLine($"\t{item.Course.Title}");
-                    Console.WriteLine();
+                    Console.WriteLine($"\t{item.Course?.Title}");
+                    foreach (var notification in item.Notifications)
+                    {
+                        Console.WriteLine($"\t{notification.Property} - {notification.Message}");
+                        Console.WriteLine();
+                    }
                 }
             }
         }
