@@ -1,5 +1,6 @@
 ﻿using mao_na_massa_balta.ContentContext;
 using System;
+using System.Collections.Generic;
 
 namespace mao_na_massa_balta
 {
@@ -7,12 +8,18 @@ namespace mao_na_massa_balta
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var course = new Course();
-            course.Level = ContentContext.Enums.EContentLevel.Beginner;
-            var career = new Career();
-            career.Items.Add(new CareerItem());
-            Console.WriteLine(career.TotalCourses);
+            var articles = new List<Article>();
+            articles.Add(new Article("Artigo sobre OOP", "orientacao-objetos"));
+            articles.Add(new Article("Artigo sobre C#", "csharp"));
+            articles.Add(new Article("Artigo sobre .NET", "dotnet"));
+
+            foreach (var article in articles)
+            {
+                Console.WriteLine(article.Id);
+                Console.WriteLine(article.Title);
+                Console.WriteLine(article.Url);
+                Console.WriteLine();
+            }
         }
     }
 }
