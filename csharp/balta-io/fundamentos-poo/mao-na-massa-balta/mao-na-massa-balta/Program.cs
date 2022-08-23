@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+// https://github.com/andrebaltieri/flunt
+// dotnet add package flunt
+
 namespace mao_na_massa_balta
 {
     public class Program
