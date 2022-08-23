@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace mao_na_massa_balta.ContentContext
 {
@@ -11,6 +9,9 @@ namespace mao_na_massa_balta.ContentContext
             string description,
             Course course)
         {
+            if (course == null)
+                throw new Exception("O curso não pode ser nulo");
+
             Order = order;
             Title = title;
             Description = description;
