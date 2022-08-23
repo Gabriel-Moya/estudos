@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace mao_na_massa_balta
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {

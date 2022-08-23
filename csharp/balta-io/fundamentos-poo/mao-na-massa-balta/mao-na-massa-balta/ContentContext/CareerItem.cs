@@ -2,7 +2,7 @@
 
 namespace mao_na_massa_balta.ContentContext
 {
-    public class CareerItem
+    public class CareerItem : Base
     {
         public CareerItem(int order,
             string title,

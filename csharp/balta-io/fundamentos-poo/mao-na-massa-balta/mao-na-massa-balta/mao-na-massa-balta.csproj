@@ -6,8 +6,4 @@
     <RootNamespace>mao_na_massa_balta</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="NotificationContext\" />
-  </ItemGroup>
-
 </Project>
