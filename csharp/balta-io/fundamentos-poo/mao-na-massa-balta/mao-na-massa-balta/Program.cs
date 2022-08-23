@@ -10,6 +10,9 @@ namespace mao_na_massa_balta
             Console.WriteLine("Hello World!");
             var course = new Course();
             course.Level = ContentContext.Enums.EContentLevel.Beginner;
+            var career = new Career();
+            career.Items.Add(new CareerItem());
+            Console.WriteLine(career.TotalCourses);
         }
     }
 }
