@@ -1,4 +1,5 @@
 ﻿using mao_na_massa_balta.NotificationContext;
+using mao_na_massa_balta.SharedContext;
 using System;
 
 namespace mao_na_massa_balta.ContentContext

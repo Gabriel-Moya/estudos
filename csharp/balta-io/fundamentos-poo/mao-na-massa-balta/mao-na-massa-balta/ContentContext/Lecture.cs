@@ -1,4 +1,5 @@
 ﻿using mao_na_massa_balta.ContentContext.Enums;
+using mao_na_massa_balta.SharedContext;
 
 namespace mao_na_massa_balta.ContentContext
 {
