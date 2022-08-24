@@ -1,4 +1,5 @@
 ﻿using mao_na_massa_balta.ContentContext;
+using mao_na_massa_balta.SubscriptionContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,6 +62,11 @@ namespace mao_na_massa_balta
                     }
                 }
             }
+
+            var payPalSubscription = new PayPalSubscription();
+            var student = new Student();
+
+            student.CreateSubscription(payPalSubscription);
         }
     }
 }
