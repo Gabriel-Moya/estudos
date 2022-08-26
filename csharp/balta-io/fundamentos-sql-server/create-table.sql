@@ -13,6 +13,14 @@ CREATE TABLE [Aluno](
 )
 GO
 
+
+-- CREATE INDEX [<Nome_Do_Indice>] ON [<Nome_da_tabela>](<Nome_Do_Campo>)
+CREATE INDEX [IX_Aluno_Email] ON [Aluno](Email)
+
+-- DROP INDEX [<Nome_Do_Indice>] ON [<Nome_da_tabela>]
+DROP INDEX [IX_Aluno_Email] ON [Aluno]
+
+
 DROP TABLE [Curso]
 CREATE TABLE [Curso](
     [Id] INT NOT NULL,
@@ -25,6 +33,7 @@ CREATE TABLE [Curso](
 )
 GO
 
+
 DROP TABLE [ProgressoCurso]
 CREATE TABLE [ProgressoCurso](
     [AlunoId] INT NOT NULL,
@@ -35,6 +44,7 @@ CREATE TABLE [ProgressoCurso](
     CONSTRAINT [PK_ProgressoCurso] PRIMARY KEY([AlunoId], [CursoId])
 )
 GO
+
 
 DROP TABLE [Categoria]
 CREATE TABLE [Categoria](
