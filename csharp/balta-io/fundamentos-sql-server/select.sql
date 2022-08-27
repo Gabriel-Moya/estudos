@@ -8,4 +8,4 @@ FROM
 -- WHERE
 --     [CategoriaId] = 1
 ORDER BY
-    []
+    [Nome] ASC
