@@ -5,6 +5,7 @@ FROM
     [Curso]
 --A ordem das colunas no where, se respeitarem a ordem do select,
 --também otimiza a consulta
-WHERE
-    [ID] = 1 AND
-    [CategoriaId] IS NOT NULL
+-- WHERE
+--     [CategoriaId] = 1
+ORDER BY
+    []
