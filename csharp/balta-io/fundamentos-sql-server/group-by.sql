@@ -9,3 +9,5 @@ GROUP BY
     [Categoria].[Id],
     [Categoria].[Nome],
     [Curso].[CategoriaId]
+HAVING
+    COUNT([Curso].[CategoriaId]) > 1
