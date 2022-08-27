@@ -1,0 +1,18 @@
+CREATE DATABASE [balta]
+GO
+
+USE [balta]
+GO
+
+CREATE TABLE [Student]
+(
+    [Id] UNIQUEIDENTIFIER NOT NULL,
+    [Name] NVARCHAR(120) NOT NULL,
+    [Email] NVARCHAR(180) NOT NULL,
+    [Document] NVARCHAR(20) NULL,
+    [Phone] NVARCHAR(20) NULL,
+    [Birthdate] DATETIME NULL,
+    [CreateDate] DATETIME NOT NULL DEFAULT(GETDATE()),
+    CONSTRAINT [PK_Student] PRIMARY KEY ([Id])
+);
+GO
