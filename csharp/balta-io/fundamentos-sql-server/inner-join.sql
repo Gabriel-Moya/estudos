@@ -1,8 +1,7 @@
 SELECT TOP 100
     [Curso].[Id],
     [Curso].[Nome],
-    [Categoria].[Id] AS [Categoria],
-    [Categoria].[Nome]
+    [Categoria].[Nome] AS [Categoria]
 FROM
     [Curso]
     INNER JOIN [Categoria]
