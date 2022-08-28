@@ -29,8 +29,6 @@ namespace BaltaDataAccess
                 }
             }
             Console.WriteLine("Conexão finalizada!");
-
-            Console.WriteLine("Hello World!");
         }
     }
 }
