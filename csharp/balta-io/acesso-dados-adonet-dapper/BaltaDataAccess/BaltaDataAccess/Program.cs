@@ -11,11 +11,13 @@ namespace BaltaDataAccess
         {
             const string connectionString = "Server=localhost,1433;Database=balta;User ID=sa;Password=senhaS3creta;TrustServerCertificate=True";
 
-            
+
 
             using (var connection = new SqlConnection(connectionString))
             {
-                UpdateCategory(connection);
+                //UpdateCategory(connection);
+                ListCategories(connection);
+                CreateManyCategories(connection);
                 ListCategories(connection);
                 //CreateCategory(connection);
             }
@@ -64,7 +66,7 @@ namespace BaltaDataAccess
             });
             Console.WriteLine($"{rows} linhas inseridas");
         }
-    
+
         static void UpdateCategory(SqlConnection connection)
         {
             var updateQuery = "UPDATE [Category] SET [Title]=@Title WHERE [Id] = @Id";
@@ -75,6 +77,63 @@ namespace BaltaDataAccess
             });
 
             Console.WriteLine($"{rows} registros atualizados");
+        }
+
+        static void CreateManyCategories(SqlConnection connection)
+        {
+            var category = new Category();
+            category.Id = Guid.NewGuid();
+            category.Title = "Amazon AWS";
+            category.Url = "amazon";
+            category.Description = "Categoria destinada a serviços da AWS";
+            category.Order = 8;
+            category.Summary = "AWS Cloud";
+            category.Featured = false;
+
+            var category2 = new Category();
+            category2.Id = Guid.NewGuid();
+            category2.Title = "Categoria nova";
+            category2.Url = "categoria-nova";
+            category2.Description = "Categoria nova";
+            category2.Order = 9;
+            category2.Summary = "Categoria";
+            category2.Featured = true;
+
+            var insertSql = @"INSERT INTO
+                                [Category]
+                            VALUES(
+                                @Id,
+                                @Title,
+                                @Url,
+                                @Summary,
+                                @Order,
+                                @Description,
+                                @Featured)";
+
+            var rows = connection.Execute(insertSql, new[]
+                {
+                    new
+                    {
+                        category.Id,
+                        category.Title,
+                        category.Url,
+                        category.Summary,
+                        category.Order,
+                        category.Description,
+                        category.Featured
+                    },
+                    new
+                    {
+                        category2.Id,
+                        category2.Title,
+                        category2.Url,
+                        category2.Summary,
+                        category2.Order,
+                        category2.Description,
+                        category2.Featured
+                    }
+                });
+            Console.WriteLine($"{rows} linhas inseridas");
         }
     }
 }
