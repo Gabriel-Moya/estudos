@@ -13,12 +13,15 @@ namespace BaltaDataAccess
         {
             const string connectionString = "Server=localhost,1433;Database=balta;User ID=sa;Password=senhaS3creta;TrustServerCertificate=True";
 
+            var category = new Category();
+            var insertSql = "INSERT INTO [Category] VALUES(NEWID(), title, url, summary, order, featured)";
+
             using (var connection = new SqlConnection(connectionString))
             {
                 var categories = connection.Query<Category>("SELECT [ID], [Title] FROM [Category]");
-                foreach (var category in categories)
+                foreach (var item in categories)
                 {
-                    Console.WriteLine($"{category.Id} - {category.Title}");
+                    Console.WriteLine($"{item.Id} - {item.Title}");
                 }
             }
         }
