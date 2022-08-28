@@ -20,20 +20,31 @@ namespace BaltaDataAccess
             category.Summary = "AWS Cloud";
             category.Featured = false;
 
-            // Previnindo SQL Injection
-
             var insertSql = @"INSERT INTO
                                 [Category]
                             VALUES(
-                                NEWID(),
-                                title,
-                                url,
-                                summary,
-                                order,
-                                featured)";
+                                @Id,
+                                @Title,
+                                @Url,
+                                @Summary,
+                                @Order,
+                                @Description,
+                                @Featured)";
 
             using (var connection = new SqlConnection(connectionString))
             {
+                var rows = connection.Execute(insertSql, new
+                {
+                    category.Id,
+                    category.Title,
+                    category.Url,
+                    category.Summary,
+                    category.Order,
+                    category.Description,
+                    category.Featured
+                });
+                Console.WriteLine($"{rows} linhas inseridas");
+
                 var categories = connection.Query<Category>("SELECT [ID], [Title] FROM [Category]");
                 foreach (var item in categories)
                 {
