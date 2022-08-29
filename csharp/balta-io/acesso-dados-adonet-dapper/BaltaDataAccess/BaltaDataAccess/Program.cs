@@ -2,6 +2,7 @@
 using Dapper;
 using Microsoft.Data.SqlClient;
 using System;
+using System.Data;
 
 namespace BaltaDataAccess
 {
@@ -11,15 +12,14 @@ namespace BaltaDataAccess
         {
             const string connectionString = "Server=localhost,1433;Database=balta;User ID=sa;Password=senhaS3creta;TrustServerCertificate=True";
 
-
-
             using (var connection = new SqlConnection(connectionString))
             {
                 //UpdateCategory(connection);
-                ListCategories(connection);
-                CreateManyCategories(connection);
-                ListCategories(connection);
+                //ListCategories(connection);
+                //CreateManyCategories(connection);
+                //ListCategories(connection);
                 //CreateCategory(connection);
+                ExecuteProcedure(connection);
             }
         }
 
@@ -134,6 +134,17 @@ namespace BaltaDataAccess
                     }
                 });
             Console.WriteLine($"{rows} linhas inseridas");
+        }
+
+        static void ExecuteProcedure(SqlConnection connection)
+        {
+            var procedure = "[spDeleteStudent]";
+            var pars = new { StudentId = "6bd552ea-7187-4bae-abb6-54e8f8b9f530" };
+            var affectedRows = connection.Execute(procedure,
+                                                  pars,
+                                                  commandType: CommandType.StoredProcedure);
+
+            Console.WriteLine($"{affectedRows} linhas afetadas");
         }
     }
 }
