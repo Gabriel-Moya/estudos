@@ -1,0 +1,2 @@
+﻿CREATE OR ALTER VIEW vwCourses AS
+	SELECT * FROM [Course]
