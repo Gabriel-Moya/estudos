@@ -7,7 +7,10 @@ namespace Blog.Repositories
 {
     public class UserRepository
     {
-        private SqlConnection _connection = new SqlConnection("");
+        private readonly SqlConnection _connection;
+
+        public UserRepository(SqlConnection connection)
+            => _connection = connection;
 
         public IEnumerable<User> Get()
             => _connection.GetAll<User>();
