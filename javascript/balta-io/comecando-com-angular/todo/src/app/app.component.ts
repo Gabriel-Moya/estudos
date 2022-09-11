@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public todos: any[] = [];
+  public title: String = 'Minhas tarefas';
 
   constructor() {
     this.todos.push('Ir à luta de judô');
@@ -16,5 +17,9 @@ export class AppComponent {
     this.todos.push(1999);
     this.todos.push({ message: 'teste' });
     this.todos.push(new Date());
+  }
+
+  alteraTexto() {
+    this.title = 'Novo título'
   }
 }
