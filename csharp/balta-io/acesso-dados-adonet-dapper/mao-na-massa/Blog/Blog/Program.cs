@@ -111,5 +111,18 @@ namespace Blog
             var repository = new Repository<User>(connection);
             repository.Update(user);
         }
+
+        public static void UpdateRole(SqlConnection connection)
+        {
+            var role = new Role()
+            {
+                Id = 2,
+                Name = "Equipe de suporte balta.io",
+                Slug = "equipe-balta"
+            };
+
+            var repository = new Repository<Role>(connection);
+            repository.Update(role);
+        }
     }
 }
