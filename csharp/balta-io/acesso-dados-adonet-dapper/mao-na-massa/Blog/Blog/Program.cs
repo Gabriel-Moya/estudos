@@ -153,5 +153,12 @@ namespace Blog
             var role = repository.Get(2);
             repository.Delete(role);
         }
+
+        public static void DeleteTag(SqlConnection connection)
+        {
+            var repository = new Repository<Tag>(connection);
+            var tag = repository.Get(2);
+            repository.Delete(tag);
+        }
     }
 }
