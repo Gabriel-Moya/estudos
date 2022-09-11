@@ -17,6 +17,7 @@ namespace Blog
             ReadUsers(connection);
             ReadRoles(connection);
             ReadTags(connection);
+            //CreateUser(connection);
 
             connection.Close();
         }
@@ -46,6 +47,22 @@ namespace Blog
 
             foreach (var item in items)
                 Console.WriteLine(item.Name);
+        }
+
+        public static void CreateUser(SqlConnection connection)
+        {
+            var user = new User()
+            {
+                Bio = "Descrição BIO",
+                Email = "teste@balta.io",
+                Image = "https://",
+                Name = "Teste",
+                PasswordHash = "HASH",
+                Slug = "teste"
+            };
+
+            var repository = new Repository<User>(connection);
+            repository.Create(user);
         }
     }
 }
