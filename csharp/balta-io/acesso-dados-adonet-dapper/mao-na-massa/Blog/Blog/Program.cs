@@ -72,7 +72,13 @@ namespace Blog
             var items = repository.Get();
 
             foreach (var item in items)
+            {
                 Console.WriteLine(item.Name);
+                foreach (var role in item.Roles)
+                {
+                    Console.WriteLine($" - {role.Name}");
+                }
+            }
         }
 
         public static void ReadRoles(SqlConnection connection)
