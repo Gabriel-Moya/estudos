@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo';
+  public todos: any[] = [];
+
+  constructor() {
+    this.todos.push('Ir à luta de judô');
+    this.todos.push('Ir ao mercado');
+    this.todos.push('Cortar o cabelo');
+    this.todos.push(1999);
+    this.todos.push({ message: 'teste' });
+    this.todos.push(new Date());
+  }
 }
