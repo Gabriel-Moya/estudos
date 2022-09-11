@@ -77,5 +77,17 @@ namespace Blog
             var repository = new Repository<Role>(connection);
             repository.Create(role);
         }
+
+        public static void CreateTag(SqlConnection connection)
+        {
+            var tag = new Tag()
+            {
+                Name = "Teste",
+                Slug = "teste"
+            };
+
+            var repository = new Repository<Tag>(connection);
+            repository.Create(tag);
+        }
     }
 }
