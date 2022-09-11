@@ -18,6 +18,7 @@ namespace Blog
             ReadRoles(connection);
             ReadTags(connection);
             //CreateUser(connection);
+            //CreateRole(connection);
 
             connection.Close();
         }
@@ -63,6 +64,18 @@ namespace Blog
 
             var repository = new Repository<User>(connection);
             repository.Create(user);
+        }
+
+        public static void CreateRole(SqlConnection connection)
+        {
+            var role = new Role()
+            {
+                Name = "Teste",
+                Slug = "teste"
+            };
+
+            var repository = new Repository<Role>(connection);
+            repository.Create(role);
         }
     }
 }
