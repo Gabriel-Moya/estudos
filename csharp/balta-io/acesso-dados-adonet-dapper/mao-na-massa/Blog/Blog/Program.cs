@@ -23,33 +23,7 @@ namespace Blog
             connection.Close();
         }
 
-        public static void ReadUsers(SqlConnection connection)
-        {
-            var repository = new Repository<User>(connection);
-            var items = repository.Get();
-
-            foreach (var item in items)
-                Console.WriteLine(item.Name);
-        }
-
-        public static void ReadRoles(SqlConnection connection)
-        {
-            var repository = new Repository<Role>(connection);
-            var items = repository.Get();
-
-            foreach (var item in items)
-                Console.WriteLine(item.Name);
-        }
-
-        public static void ReadTags(SqlConnection connection)
-        {
-            var repository = new Repository<Tag>(connection);
-            var items = repository.Get();
-
-            foreach (var item in items)
-                Console.WriteLine(item.Name);
-        }
-
+        //CREATE
         public static void CreateUser(SqlConnection connection)
         {
             var user = new User()
@@ -88,6 +62,54 @@ namespace Blog
 
             var repository = new Repository<Tag>(connection);
             repository.Create(tag);
+        }
+
+
+        //READ
+        public static void ReadUsers(SqlConnection connection)
+        {
+            var repository = new Repository<User>(connection);
+            var items = repository.Get();
+
+            foreach (var item in items)
+                Console.WriteLine(item.Name);
+        }
+
+        public static void ReadRoles(SqlConnection connection)
+        {
+            var repository = new Repository<Role>(connection);
+            var items = repository.Get();
+
+            foreach (var item in items)
+                Console.WriteLine(item.Name);
+        }
+
+        public static void ReadTags(SqlConnection connection)
+        {
+            var repository = new Repository<Tag>(connection);
+            var items = repository.Get();
+
+            foreach (var item in items)
+                Console.WriteLine(item.Name);
+        }
+
+
+        //UPDATE
+        public static void UpdateUser(SqlConnection connection)
+        {
+            var user = new User()
+            {
+                Id = 2,
+                Bio = "Equipe | balta.io",
+                Email = "hello@balta.io",
+                Image = "https://",
+                Name = "Equipe de suporte balta.io",
+                PasswordHash = "HASH",
+                Slug = "equipe-balta"
+            };
+
+            var repository = new Repository<User>(connection);
+            repository.Update(user);
         }
     }
 }
