@@ -1,25 +1,23 @@
 import { Component } from '@angular/core';
+import { Todo } from 'src/models/todo.model';
 
 @Component({
   selector: 'app-root', // <app-root>
   templateUrl: './app.component.html',
   //template: '<p>Meu template</p>',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  public todos: any[] = [];
+  public todos: Todo[] = [];
   public title: String = 'Minhas tarefas';
 
   constructor() {
-    this.todos.push('Ir à luta de judô');
-    this.todos.push('Ir ao mercado');
-    this.todos.push('Cortar o cabelo');
-    this.todos.push(1999);
-    this.todos.push({ message: 'teste' });
-    this.todos.push(new Date());
+    this.todos.push(new Todo(1, 'Ir à luta de judô', false));
+    this.todos.push(new Todo(2, 'Ir ao mercado', false));
+    this.todos.push(new Todo(3, 'Cortar o cabelo', true));
   }
 
   alteraTexto() {
-    this.title = 'Novo título'
+    this.title = 'Novo título';
   }
 }

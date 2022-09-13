@@ -2,5 +2,5 @@
 <button (click)="alteraTexto()">Alterar título</button>
 
 <ul>
-  <li *ngFor="let todo of todos">{{ todo }}</li>
+  <li *ngFor="let todo of todos">{{ todo.id }}. {{ todo.title }} | <button>Remover</button> | <button>Concluir</button></li>
 </ul>
