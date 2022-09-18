@@ -10,6 +10,14 @@
   </li>
 </ul>
 
+<form [formGroup]="form">
+  <fieldset>
+    <label>Tarefa: </label>
+    <input type="text" placeholder="Título da tarefa" maxlength="60" formControlName="title">
+    <button>Salvar</button>
+  </fieldset>
+</form>
+
 
 <!--
 
