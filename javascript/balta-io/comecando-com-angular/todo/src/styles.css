@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  background: #3023ae;
+  background: -moz-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+  background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+  background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3023ae', endColorstr='#c86dd7', GradientType=1);
+}
