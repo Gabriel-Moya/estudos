@@ -6,6 +6,16 @@
     {{ todo.id }}. {{ todo.title }} |
     <button *ngIf="!todo.done">Concluir</button> |
     <button *ngIf="todo.done">Refazer</button> |
-    <button>Remover</button>
+    <button (click)="remove(todo)">Remover</button>
   </li>
 </ul>
+
+
+<!--
+
+Tipos de binding no angular:
+() = HTML => TS
+[] = TS => HTML
+[()] = TS <> HTML
+
+-->
