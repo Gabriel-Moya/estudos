@@ -49,3 +49,25 @@ li > button:hover {
   opacity: 1;
   transition: opacity 0.5s;
 }
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 3px 5px #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  background-color: #000;
+  border: none;
+  padding: 20px;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1em;
+  padding-left: 50px;
+  padding-right: 50px;
+}
