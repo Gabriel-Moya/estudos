@@ -39,10 +39,6 @@ export class AppComponent {
     this.form.reset();
   }
 
-  alteraTexto() {
-    this.title = 'Novo título';
-  }
-
   remove(todo: Todo) {
     const index = this.todos.indexOf(todo);
     if(index !== -1) {
