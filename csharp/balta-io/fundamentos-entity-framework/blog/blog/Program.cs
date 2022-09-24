@@ -35,15 +35,15 @@ namespace blog
                 //context.SaveChanges();
 
                 // ToList and AsNoTracking
-                var tags = context
-                    .Tags
-                    .AsNoTracking()
-                    .ToList();
+                //var tags = context
+                //    .Tags
+                //    .AsNoTracking()
+                //    .ToList();
 
-                foreach (var tag in tags)
-                {
-                    System.Console.WriteLine(tag.Name);
-                }
+                //foreach (var tag in tags)
+                //{
+                //    System.Console.WriteLine(tag.Name);
+                //}
 
                 //var tag = context
                 //    .Tags
@@ -54,6 +54,13 @@ namespace blog
 
                 //context.Update(tag);
                 //context.SaveChanges();
+
+                var tag = context
+                    .Tags
+                    .AsNoTracking()
+                    .SingleOrDefault(x => x.Id == 3);
+
+                System.Console.WriteLine(tag?.Name);
             }
         }
     }
