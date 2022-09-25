@@ -1,4 +1,6 @@
-﻿namespace blog.Models
+﻿using System.Collections.Generic;
+
+namespace blog.Models
 {
     public class User
     {
@@ -9,5 +11,8 @@
         public string Bio { get; set; }
         public string Image { get; set; }
         public string Slug { get; set; }
+
+        public IList<Post> Posts { get; set; }
+        public IList<Role> Roles { get; set; }
     }
 }

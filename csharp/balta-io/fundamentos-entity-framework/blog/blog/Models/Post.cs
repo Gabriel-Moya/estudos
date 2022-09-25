@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace blog.Models
 {
@@ -15,5 +16,7 @@ namespace blog.Models
         public Category Category { get; set; }
         public int AuthorId { get; set; }
         public User Author { get; set; }
+
+        public IList<Tag> Tags { get; set; }
     }
 }
