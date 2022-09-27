@@ -1,5 +1,5 @@
 ﻿using blog.Data;
-using blog.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace blog
@@ -8,7 +8,10 @@ namespace blog
     {
         static void Main(string[] args)
         {
-
+            using var context = new BlogDataContext();
+            var post = context.Posts.FirstOrDefault(x => x.Id == 1);
+            var posts2 = context.Posts.AsNoTracking();
+            // UPDATE [Tabela] SET [Campo] = VALOR WHERE [Id] = X
         }
     }
 }
