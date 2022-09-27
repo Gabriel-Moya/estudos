@@ -10,8 +10,8 @@ using blog.Data;
 namespace blog.Migrations
 {
     [DbContext(typeof(BlogDataContext))]
-    [Migration("20220927012711_AddGithub")]
-    partial class AddGithub
+    [Migration("20220927013306_InitialCreation")]
+    partial class InitialCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -104,7 +104,7 @@ namespace blog.Migrations
                     b.Property<DateTime>("LastUpdateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("SMALLDATETIME")
-                        .HasDefaultValue(new DateTime(2022, 9, 27, 1, 27, 11, 241, DateTimeKind.Utc).AddTicks(4913))
+                        .HasDefaultValue(new DateTime(2022, 9, 27, 1, 33, 6, 646, DateTimeKind.Utc).AddTicks(8647))
                         .HasColumnName("LastUpdateDate");
 
                     b.Property<string>("Slug")

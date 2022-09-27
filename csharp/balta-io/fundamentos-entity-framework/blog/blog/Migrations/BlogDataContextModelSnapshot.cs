@@ -102,7 +102,7 @@ namespace blog.Migrations
                     b.Property<DateTime>("LastUpdateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("SMALLDATETIME")
-                        .HasDefaultValue(new DateTime(2022, 9, 27, 1, 27, 11, 241, DateTimeKind.Utc).AddTicks(4913))
+                        .HasDefaultValue(new DateTime(2022, 9, 27, 1, 33, 6, 646, DateTimeKind.Utc).AddTicks(8647))
                         .HasColumnName("LastUpdateDate");
 
                     b.Property<string>("Slug")
