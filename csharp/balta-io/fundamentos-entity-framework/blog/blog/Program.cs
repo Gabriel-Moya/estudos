@@ -15,17 +15,23 @@ namespace blog
             // Lazy Loading
             // Eager Loading
             using var context = new BlogDataContext();
-
-            var posts = context.Posts.Include(x => x.Tags);
-            foreach (var post in posts)
-            {
-                foreach (var tag in post.Tags)
-                {
-
-                }
-            }
+            var posts = GetPosts(context, 0, 25);
+            var posts2 = GetPosts(context, 25, 25);
+            var posts3 = GetPosts(context, 50, 25);
+            var posts4 = GetPosts(context, 75, 25);
 
             Console.WriteLine("Teste");
+        }
+
+        public static List<Post> GetPosts(BlogDataContext context, int skip = 0, int take = 25)
+        {
+            var posts = context
+                .Posts
+                .AsNoTracking()
+                .Skip(skip)
+                .Take(take)
+                .ToList();
+            return posts;
         }
     }
 }
