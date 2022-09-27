@@ -12,13 +12,12 @@ namespace blog
     {
         static void Main(string[] args)
         {
-            // Lazy Loading
-            // Eager Loading
             using var context = new BlogDataContext();
-            var posts = GetPosts(context, 0, 25);
-            var posts2 = GetPosts(context, 25, 25);
-            var posts3 = GetPosts(context, 50, 25);
-            var posts4 = GetPosts(context, 75, 25);
+
+            var posts = context.Posts
+                .Include(x => x.Author)
+                .ThenInclude(x => x.Roles)
+                .Include(x => x.Category);
 
             Console.WriteLine("Teste");
         }
