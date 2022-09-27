@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace blog
 {
@@ -14,10 +13,12 @@ namespace blog
         {
             using var context = new BlogDataContext();
 
-            var posts = context.Posts
-                .Include(x => x.Author)
-                .ThenInclude(x => x.Roles)
-                .Include(x => x.Category);
+            var posts = context.PostWithTagsCount.ToList();
+            foreach (var post in posts)
+            {
+                Console.WriteLine(post.Name);
+                Console.WriteLine(post.Count);
+            }
 
             Console.WriteLine("Teste");
         }
