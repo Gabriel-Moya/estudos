@@ -3,27 +3,29 @@ using blog.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace blog
 {
     public class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
+            // Lazy Loading
+            // Eager Loading
             using var context = new BlogDataContext();
 
-            var post = await context.Posts.ToListAsync();
-            var users = await context.Users.ToListAsync();
+            var posts = context.Posts.Include(x => x.Tags);
+            foreach (var post in posts)
+            {
+                foreach (var tag in post.Tags)
+                {
 
-            var posts = await GetPosts(context);
+                }
+            }
 
             Console.WriteLine("Teste");
-        }
-
-        public static async Task<IEnumerable<Post>> GetPosts(BlogDataContext context)
-        {
-            return await context.Posts.ToListAsync();
         }
     }
 }

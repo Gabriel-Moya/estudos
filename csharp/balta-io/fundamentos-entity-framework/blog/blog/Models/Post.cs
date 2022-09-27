@@ -17,6 +17,6 @@ namespace blog.Models
         public int AuthorId { get; set; }
         public User Author { get; set; }
 
-        public IList<Tag> Tags { get; set; }
+        public List<Tag> Tags { get; set; }
     }
 }
