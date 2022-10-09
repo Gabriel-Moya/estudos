@@ -6,15 +6,15 @@
           <span class="uk-icon uk-margin-small-right" uk-icon="icon: icon-color-light; ratio: 0.15"></span>
         </a>
         <ul class="uk-navbar-nav">
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Meus Pets</a></li>
+          <li><a href="#" [routerLink]="['/']" routerLinkActive="uk-text-bold">Produtos</a></li>
+          <li><a href="#" [routerLink]="['/account/pets']" routerLinkActive="uk-text-bold">Meus Pets</a></li>
           <li><a href="#">Consultas</a></li>
         </ul>
       </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           <li>
-            <a href="">
+            <a [routerLink]="['/cart']" routerLinkActive="uk-text-bold">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
               <span class="uk-badge">0</span>
             </a>
