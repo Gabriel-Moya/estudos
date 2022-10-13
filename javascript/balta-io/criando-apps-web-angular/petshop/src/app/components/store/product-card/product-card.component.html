@@ -1,0 +1,17 @@
+<div class="uk-card uk-card-default">
+  <div class="uk-card-media-top uk-text-center">
+    <img src="{{ product.images[0] }}" height="150" width="150" class="uk-margin-small-top uk-border-circle" alt="" uk-cover>
+  </div>
+  <div>
+    <div class="uk-card-body">
+      <h3 class="uk-card-title">{{ product.price }}</h3>
+      <p style="height: 50px;">
+        {{ product.title }}
+      </p>
+      <button class="uk-button uk-button-default">
+        <span class="uk-icon uk-margin-small-right" uk-icon="icon: cart;"></span>
+        Adicionar
+      </button>
+    </div>
+  </div>
+</div>

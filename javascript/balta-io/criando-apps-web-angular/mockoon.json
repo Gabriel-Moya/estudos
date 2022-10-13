@@ -1,0 +1,90 @@
+{
+  "uuid": "7dfb4642-2d1b-4ae0-b1b7-3cb544533386",
+  "lastMigration": 22,
+  "name": "Example",
+  "endpointPrefix": "v1",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "127.0.0.1",
+  "routes": [
+    {
+      "uuid": "08d0a627-89e5-48de-89ab-75c92112ab71",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "81e263b4-d6a3-4421-9ef0-2b0c78b2cb53",
+          "body": "[\n  {\n    \"_id\": \"481598b848f447b4b923ca2ad405aa09\",\n    \"title\": \"Cama M1 Urban\",\n    \"category\": \"accessories\",\n    \"description\": \"<ul><li><span><b>Pet:</b></span><span> Cachorros</span></li><li><span><b>Porte de Raça:</b></span><span> Grande, Médio e Pequeno</span></li><li><span><b>Idade:</b></span><span> Sênior, Adulto e Filhote</span></li><li><span><b>Material:</b></span><span> Plástico</span></li><li><span><b>Medidas<br>aproximadas:</b></span><span> Tamanho 8 (84 x 59,5 x h 25 cm), Tamanho 6 (70,5 x 52 x h 23,5 cm), Tamanho 4 (61,5 x 45 x h 21,5 cm), Tamanho 2 (52 x 36 x h 17,5 cm), Tamanho 12 (111 x 80,5 x h 33,5 cm), Tamanho 10 (93,5 x 68 x h 28 e5 cm)</span></li><li><span><b>Tipo:</b></span><span> Cama</span></li><li><span><b>Cor:</b></span><span> Bordô</span></li><li><span><b>Apresentação:</b></span><span> <p><span>Disponível nos tamanhos 2, 4, 6, 8, 10 e 12</span></p></span></li><li><span><b>Código de barras:</b></span><span> 8010690074689</span></li></ul>\",\n    \"price\": 5999,\n    \"images\": [\n      \"https://baltaio.blob.core.windows.net/courses/7180/cama-m1-urban-puppy.jpg\"\n    ]\n  },\n  {\n    \"_id\": \"481598b848f447b4b923ca2ad405aa10\",\n    \"title\": \"Ração Golden Special Sabor Frango e Carne para Cães Adultos\",\n    \"category\": \"food\",\n    \"description\": \"<p>- Indicado para cães adultos;<br>- Livre de corantes e aromatizantes artificiais;<br>- Alimento rico em nutrientes;<br>- Promove o equilíbrio intestinal;<br>- Protege as articulações;<br>- Disponível em embalagens de 15kg e 20kg.</p>\",\n    \"price\": 10490,\n    \"images\": [\n      \"https://baltaio.blob.core.windows.net/courses/7180/racao-golden.png\"\n    ]\n  },\n  {\n    \"_id\": \"481598b848f447b4b923ca2ad405aa11\",\n    \"title\": \"Ração Royal Canin Golden Retriever - Cães Adultos - 12kg\",\n    \"category\": \"food\",\n    \"description\": \"<p>- Indicada para cães adultos; <br>- Específica para pets da raça Golden Retriever; <br>- Auxilia na manutenção do peso ideal; <br>- Mantém a saúde da musculatura cardíaca; <br>- Proporciona uma pele e pelagem mais saudáveis,<br>- Disponível em embalagem de 12kg. </p>\",\n    \"price\": 21999,\n    \"images\": [\n      \"https://baltaio.blob.core.windows.net/courses/7180/racao-royal-canin.png\"\n    ]\n  }\n]",
+          "latency": 800,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "67381eb9-4ffb-498c-ad82-7636b5ea8be7",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "pets",
+      "responses": [
+        {
+          "uuid": "3f0b0b9d-4b89-45b7-9b15-50cb72840e2a",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET, POST, PUT, DELETE"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [],
+  "proxyResHeaders": []
+}
