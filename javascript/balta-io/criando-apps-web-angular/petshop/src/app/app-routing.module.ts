@@ -14,7 +14,8 @@ const routes: Routes = [
     component: FramePageComponent,
     children: [
       { path: '', component: ProductsPageComponent },
-      { path: '', component: CartPageComponent }
+      { path: 'cart', component: CartPageComponent },
+      { path: 'checkout', component: CheckoutPageComponent }
     ]
   },
   {
