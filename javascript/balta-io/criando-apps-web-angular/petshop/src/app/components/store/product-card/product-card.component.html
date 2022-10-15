@@ -4,7 +4,7 @@
   </div>
   <div>
     <div class="uk-card-body">
-      <h3 class="uk-card-title">{{ product.price }}</h3>
+      <h3 class="uk-card-title">{{ product.price / 100 | currency: 'BRL' }}</h3>
       <p style="height: 50px;">
         {{ product.title }}
       </p>
