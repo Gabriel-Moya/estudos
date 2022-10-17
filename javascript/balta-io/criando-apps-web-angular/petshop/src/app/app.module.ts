@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +16,10 @@ import { FramePageComponent } from './pages/master/frame.page';
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 import { ProductsPageComponent } from './pages/store/products-page/products-page.component';
 import { ProductCardComponent } from './components/store/product-card/product-card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { MaskDirective } from './directives/mask.directive';
+import { DataService } from './services/data.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -25,14 +32,19 @@ import { ProductCardComponent } from './components/store/product-card/product-ca
     PetsPageComponent,
     CartPageComponent,
     FramePageComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    LoadingComponent,
+    MaskDirective
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ DataService, AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
