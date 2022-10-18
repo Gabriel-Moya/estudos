@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/models/product.model';
 import { CartUtil } from 'src/app/utils/cart.util';
 import { ToastrService } from 'ngx-toastr';
@@ -8,14 +8,13 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './product-card.component.html'
 })
 export class ProductCardComponent implements OnInit {
-
   @Input() product: Product;
 
   constructor(
     private toastr: ToastrService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   addToCart() {
