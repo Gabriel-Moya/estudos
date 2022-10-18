@@ -1,4 +1,4 @@
-import { CartItem } from './cart-item.model';
+import { CartItem } from './cart-item';
 
 export class Cart {
     constructor(
