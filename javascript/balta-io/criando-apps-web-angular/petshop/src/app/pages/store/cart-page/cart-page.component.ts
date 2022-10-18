@@ -1,14 +1,37 @@
 import { Component, OnInit } from '@angular/core';
+import { Cart } from 'src/app/models/cart.model';
+import { CartUtil } from 'src/app/utils/cart.util';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart-page',
-  templateUrl: './cart-page.component.html'
+  templateUrl: './cart-page.component.html',
+  styleUrls: ['./cart-page.component.css']
 })
 export class CartPageComponent implements OnInit {
+  public cart: Cart = new Cart();
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.loadCart();
+  }
+
+  public loadCart() {
+    this.cart = CartUtil.get();
+  }
+
+  public remove(item) {
+    let index = this.cart.items.indexOf(item);
+    this.cart.items.splice(index, 1);
+    CartUtil.update(this.cart);
+  }
+
+  public clear() {
+    CartUtil.clear();
+    this.loadCart();
   }
 
 }
