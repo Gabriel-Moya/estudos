@@ -24,7 +24,7 @@ export class ProductCardComponent implements OnInit {
       this.product.title,
       1,
       this.product.price,
-      this.product.image
+      this.product.images[0]
     )
     this.toastr.success(`${this.product.title} adicionado ao carrinho`, 'Produto Adicionado');
   }
