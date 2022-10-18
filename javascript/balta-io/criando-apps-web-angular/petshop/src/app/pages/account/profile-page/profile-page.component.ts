@@ -7,8 +7,7 @@ import { CustomValidator } from 'src/app/validators/custom.validator';
 
 @Component({
   selector: 'app-profile-page',
-  templateUrl: './profile-page.component.html',
-  styleUrls: ['./profile-page.component.css']
+  templateUrl: './profile-page.component.html'
 })
 export class ProfilePageComponent implements OnInit {
   public form: FormGroup;

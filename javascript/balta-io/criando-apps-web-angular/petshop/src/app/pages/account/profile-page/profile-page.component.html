@@ -6,10 +6,12 @@
       <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-small">
         <h3 class="uk-card-title">Meu Perfil</h3>
         <div class="uk-margin">
-          <input class="uk-input uk-form-large" formControlName="name" type="text" placeholder="Nome" [ngClass]="{'uk-form-danger': (!form.controls.name.valid && !form.controls.name.pristine) }">
+          <input class="uk-input uk-form-large" formControlName="name" type="text" placeholder="Nome"
+            [ngClass]="{'uk-form-danger': (!form.controls.name.valid && !form.controls.name.pristine) }">
         </div>
         <div class="uk-margin">
-          <input class="uk-input uk-form-large" formControlName="email" type="email" placeholder="E-mail" [ngClass]="{'uk-form-danger': (!form.controls.email.valid && !form.controls.email.pristine) }">
+          <input class="uk-input uk-form-large" formControlName="email" type="email" placeholder="E-mail"
+            [ngClass]="{'uk-form-danger': (!form.controls.email.valid && !form.controls.email.pristine) }">
         </div>
         <div class="uk-margin">
           <input class="uk-input uk-form-large" formControlName="document">
