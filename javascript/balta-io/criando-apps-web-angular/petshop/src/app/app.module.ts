@@ -6,7 +6,7 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FramePageComponent } from './pages/master/frame-page.component';
+import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
@@ -44,8 +44,8 @@ import { AuthService } from './services/auth.service';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), //https://www.npmjs.com/package/ngx-toastr
     AppRoutingModule
   ],
   providers: [DataService, AuthService],
