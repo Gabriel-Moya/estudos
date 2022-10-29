@@ -13,4 +13,13 @@ public class HomeController : ControllerBase
     {
         return context.Todos.ToList();
     }
+
+    [HttpPost("/")]
+    public TodoModel Post([FromBody] TodoModel todo, [FromServices] AppDbContext context)
+    {
+        context.Todos.Add(todo);
+        context.SaveChanges();
+
+        return todo;
+    }
 }
