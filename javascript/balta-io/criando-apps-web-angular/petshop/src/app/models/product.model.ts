@@ -1,8 +1,8 @@
 export class Product {
-  public _id: string | undefined;
-  public title: string | undefined;
-  public category: string | undefined;
-  public description: string | undefined;
-  public price: number | undefined;
-  public image: string | undefined;
+    public _id: string;
+    public title: string;
+    public category: string;
+    public description: string;
+    public price: number;
+    public images: string[];
 }

@@ -7,8 +7,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-reset-password-page',
-  templateUrl: './reset-password-page.component.html',
-  styleUrls: ['./reset-password-page.component.css']
+  templateUrl: './reset-password-page.component.html'
 })
 export class ResetPasswordPageComponent implements OnInit {
   public form: FormGroup;
