@@ -58,15 +58,15 @@ public class CategoryController : ControllerBase
             await context.AddAsync(category);
             await context.SaveChangesAsync();
 
-            return Created($"v1/categories/{category.Id}", category);
+            return Created($"v1/categories/{category.Id}", new ResultViewModel<Category>(category));
         }
         catch (DbUpdateException ex)
         {
-            return StatusCode(500, "05XE9 - Não foi possível incluir a categoria");
+            return StatusCode(500, new ResultViewModel<Category>("05XE9 - Não foi possível incluir a categoria"));
         }
         catch
         {
-            return StatusCode(500, "05X10 - Falha interna no servidor");
+            return StatusCode(500, new ResultViewModel<Category>("05X10 - Falha interna no servidor"));
         }
     }
 
@@ -77,7 +77,7 @@ public class CategoryController : ControllerBase
         {
             var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category is null) return NotFound();
+            if (category is null) return NotFound(new ResultViewModel<Category>("Conteúdo não encontrado"));
 
             category.Name = model.Name;
             category.Slug = model.Slug;
@@ -85,15 +85,15 @@ public class CategoryController : ControllerBase
             context.Categories.Update(category);
             await context.SaveChangesAsync();
 
-            return Ok();
+            return Ok(new ResultViewModel<Category>(category));
         }
         catch (DbUpdateException ex)
         {
-            return StatusCode(500, "05XE8 - Não foi possível alterar a categoria");
+            return StatusCode(500, new ResultViewModel<Category>("05XE8 - Não foi possível alterar a categoria"));
         }
         catch
         {
-            return StatusCode(500, "05X11 - Falha interna no servidor");
+            return StatusCode(500, new ResultViewModel<Category>("05X11 - Falha interna no servidor"));
         }
     }
 
@@ -104,20 +104,20 @@ public class CategoryController : ControllerBase
         {
             var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category is null) return NotFound();
+            if (category is null) return NotFound(new ResultViewModel<Category>("Conteúdo não encontrado"));
 
             context.Categories.Remove(category);
             await context.SaveChangesAsync();
 
-            return Ok(category);
+            return Ok(new ResultViewModel<Category>(category));
         }
         catch (DbUpdateException ex)
         {
-            return StatusCode(500, "05XE7 - Não foi possível excluir a categoria");
+            return StatusCode(500, new ResultViewModel<Category>("05XE7 - Não foi possível excluir a categoria"));
         }
         catch (Exception ex)
         {
-            return StatusCode(500, "05X12 - Falha interna no sergidor");
+            return StatusCode(500, new ResultViewModel<Category>("05X12 - Falha interna no sergidor"));
         }
     }
 }
