@@ -1,4 +1,5 @@
 ﻿using Blog.Data;
+using Blog.Extensions;
 using Blog.Models;
 using Blog.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -43,6 +44,9 @@ public class CategoryController : ControllerBase
     [HttpPost("v1/categories")]
     public async Task<IActionResult> PostAsync([FromBody] EditorCategoryViewModel model, [FromServices] BlogDataContext context)
     {
+        if (!ModelState.IsValid)
+            return BadRequest(new ResultViewModel<Category>(ModelState.GetErrors()));
+
         try
         {
             var category = new Category
