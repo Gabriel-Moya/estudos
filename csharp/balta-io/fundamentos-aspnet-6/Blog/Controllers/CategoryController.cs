@@ -31,12 +31,12 @@ public class CategoryController : ControllerBase
         {
             var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category is null) return NotFound();
-            return Ok(category);
+            if (category is null) return NotFound(new ResultViewModel<Category>("Conteúdo não encontrado"));
+            return Ok(new ResultViewModel<Category>(category));
         }
         catch
         {
-            return StatusCode(500, "05X05 - Falha interna no servidor");
+            return StatusCode(500, new ResultViewModel<Category>("05X05 - Falha interna no servidor"));
         }
     }
 
