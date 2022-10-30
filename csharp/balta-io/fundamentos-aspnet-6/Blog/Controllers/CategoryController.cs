@@ -27,10 +27,21 @@ public class CategoryController : ControllerBase
     [HttpPost("v1/categories")]
     public async Task<IActionResult> PostAsync([FromBody] Category model, [FromServices] BlogDataContext context)
     {
-        await context.AddAsync(model);
-        await context.SaveChangesAsync();
+        try
+        {
+            await context.AddAsync(model);
+            await context.SaveChangesAsync();
 
-        return Created($"v1/categories/{model.Id}", model);
+            return Created($"v1/categories/{model.Id}", model);
+        }
+        catch (DbUpdateException ex)
+        {
+            return StatusCode(500, "05XE9 - Não foi possível incluir a categoria");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, "05X10 - Falha interna no sergidor");
+        }
     }
 
     [HttpPut("v1/categories/{id:int}")]
