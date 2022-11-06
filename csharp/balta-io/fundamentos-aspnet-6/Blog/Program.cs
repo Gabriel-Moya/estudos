@@ -37,6 +37,13 @@ builder.Services.AddDbContext<BlogDataContext>();
 builder.Services.AddTransient<TokenService>();
 
 var app = builder.Build();
+Configuration.JwtKey = app.Configuration.GetValue<string>("JwtKey");
+Configuration.ApiKeyName = app.Configuration.GetValue<string>("ApiKeyName");
+Configuration.ApiKey = app.Configuration.GetValue<string>("ApiKey");
+
+var smtp = new Configuration.SmtpConfiguration();
+app.Configuration.GetSection("Smtp").Bind(smtp);
+Configuration.Smtp = smtp;
 
 app.UseAuthentication();
 app.UseAuthorization();
