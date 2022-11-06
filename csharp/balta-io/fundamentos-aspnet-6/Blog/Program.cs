@@ -16,6 +16,7 @@ ConfigureServices(builder);
 var app = builder.Build();
 LoadConfiguration(app);
 
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseResponseCompression();
