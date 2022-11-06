@@ -66,4 +66,5 @@ void ConfigureServices(WebApplicationBuilder builder)
     //builder.Services.AddScoped();       // Cria um novo a cada transa��o (Request)
     //builder.Services.AddSingleton();    // Singleton => 1 por App
     builder.Services.AddTransient<TokenService>();
+    builder.Services.AddTransient<EmailService>();
 }
