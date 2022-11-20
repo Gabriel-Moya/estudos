@@ -137,12 +137,20 @@
 //}
 //#endregion
 
-#region DateTime
-var teste = DateTime.Now;
-Console.WriteLine(teste.Microsecond);
-Console.WriteLine(teste.Nanosecond);
+//#region DateTime
+//var teste = DateTime.Now;
+//Console.WriteLine(teste.Microsecond);
+//Console.WriteLine(teste.Nanosecond);
 
-var time = TimeOnly.MaxValue;
-Console.WriteLine(time.Microsecond);
-Console.WriteLine(time.Nanosecond);
+//var time = TimeOnly.MaxValue;
+//Console.WriteLine(time.Microsecond);
+//Console.WriteLine(time.Nanosecond);
+//#endregion
+
+#region TarSupport
+using System.Formats.Tar;
+
+TarFile.CreateFromDirectory(@"C:\dev\tar", @"C:\dev\teste.tar", true);
+
+TarFile.ExtractToDirectory(@"C:\dev\teste.tar", @"C:\dev\teste-desc", false);
 #endregion
