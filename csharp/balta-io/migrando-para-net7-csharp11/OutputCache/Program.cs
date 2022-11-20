@@ -16,6 +16,15 @@ app.MapGet("/cache", () => new
     date = DateTime.Now
 }).CacheOutput();
 
+app.MapGet("/cache/vary/{cacheId}", (string cacheId) => new
+{
+    date = DateTime.Now
+}).CacheOutput(policy =>
+{
+    policy.SetVaryByQuery("cacheId");
+    policy.Expire(TimeSpan.FromSeconds(15));
+});
+
 app.UseOutputCache();
 
 app.Run();
