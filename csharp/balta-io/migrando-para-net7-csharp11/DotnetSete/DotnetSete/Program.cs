@@ -108,31 +108,41 @@
 //Console.WriteLine(obj.GetType());
 //#endregion
 
-#region DefaultStruct
-var m2 = default(Measurement);
-Console.WriteLine(m2);
+//#region DefaultStruct
+//var m2 = default(Measurement);
+//Console.WriteLine(m2);
 
-Console.WriteLine(nameof(m2));
-Console.WriteLine(nameof(m2.ToString));
-Console.WriteLine(nameof(m2.Description));
+//Console.WriteLine(nameof(m2));
+//Console.WriteLine(nameof(m2.ToString));
+//Console.WriteLine(nameof(m2.Description));
 
-public readonly struct Measurement
-{
-    public Measurement()
-    {
-        Value = double.NaN;
-        Description = "Undefined";
-    }
+//public readonly struct Measurement
+//{
+//    public Measurement()
+//    {
+//        Value = double.NaN;
+//        Description = "Undefined";
+//    }
 
-    public Measurement(double value, string description)
-    {
-        Value = value;
-        Description = description;
-    }
+//    public Measurement(double value, string description)
+//    {
+//        Value = value;
+//        Description = description;
+//    }
 
-    public double Value { get; init; }
-    public string Description { get; init; }
+//    public double Value { get; init; }
+//    public string Description { get; init; }
 
-    public override string ToString() => $"{Value} ({Description})";
-}
+//    public override string ToString() => $"{Value} ({Description})";
+//}
+//#endregion
+
+#region DateTime
+var teste = DateTime.Now;
+Console.WriteLine(teste.Microsecond);
+Console.WriteLine(teste.Nanosecond);
+
+var time = TimeOnly.MaxValue;
+Console.WriteLine(time.Microsecond);
+Console.WriteLine(time.Nanosecond);
 #endregion
