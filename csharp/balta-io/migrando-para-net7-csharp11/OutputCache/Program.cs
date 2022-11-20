@@ -1,32 +1,32 @@
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddTransient<MeuServico>();
 builder.Services.AddOutputCache(options =>
 {
     options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(5);
 });
 builder.Services.AddControllers();
 
-var app = builder.Build();
-
-app.MapGet("/", () => new
+// Para desabilitar o comportamento padrão do Implicity From Services
+builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
-    date = DateTime.Now
+    options.DisableImplicitFromServicesParameters = true;
 });
 
-app.MapGet("/cache", () => new
-{
-    date = DateTime.Now
-}).CacheOutput();
+var app = builder.Build();
 
-app.MapGet("/cache/vary/{cacheId}", (string cacheId) => new
+app.MapGet("/", (MeuServico servico) => new
 {
     date = DateTime.Now
-}).CacheOutput(policy =>
-{
-    policy.SetVaryByQuery("cacheId");
-    policy.Expire(TimeSpan.FromSeconds(15));
 });
 
 app.UseOutputCache();
 app.MapControllers();
 
 app.Run();
+
+public class MeuServico
+{
+    public void DoSomething() { }
+}
