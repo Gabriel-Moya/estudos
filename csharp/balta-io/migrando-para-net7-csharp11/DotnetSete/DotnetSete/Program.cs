@@ -63,3 +63,20 @@ string Method() => default;
 
 public class GenericAttribute<T> : Attribute { }
 #endregion
+
+#region Required
+public class Person
+{
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
+
+    public int? Age { get; set; }
+}
+
+//var person = new Person(); // Erro de Required Member
+//var person = new Person
+//{
+//    FirstName = "Gabriel",
+//    LastName = "Moya"
+//}; // Permitido
+#endregion
