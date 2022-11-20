@@ -109,14 +109,12 @@
 //#endregion
 
 #region DefaultStruct
-var m1 = new Measurement();
-Console.WriteLine(m1);
-
 var m2 = default(Measurement);
 Console.WriteLine(m2);
 
-var m3 = new Measurement[2];
-Console.WriteLine(string.Join(", ", m3));
+Console.WriteLine(nameof(m2));
+Console.WriteLine(nameof(m2.ToString));
+Console.WriteLine(nameof(m2.Description));
 
 public readonly struct Measurement
 {
