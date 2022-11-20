@@ -87,13 +87,23 @@
 //Console.WriteLine(System.Text.Encoding.UTF8.GetString(text2));
 //#endregion
 
-#region CombinedActions
-Action<string> stringAction = str => { };
-Action<object> objectAction = obj => { };
+//#region CombinedActions
+//Action<string> stringAction = str => { };
+//Action<object> objectAction = obj => { };
 
-// Creates a new delegate instance with a runtiome type of Action<string>.
-Action<string> wrappedObjectAction = new Action<string>(objectAction);
+//// Creates a new delegate instance with a runtiome type of Action<string>.
+//Action<string> wrappedObjectAction = new Action<string>(objectAction);
 
-// The two Action<string> delegate instances can now be combined.
-Action<string> combination = stringAction + wrappedObjectAction;
+//// The two Action<string> delegate instances can now be combined.
+//Action<string> combination = stringAction + wrappedObjectAction;
+//#endregion
+
+#region Dynamic
+dynamic dyn = 1;
+object obj = 1;
+
+// Rest the mouse pointer over dyn and obj to seer their
+// type at compile time.
+Console.WriteLine(dyn.GetType());
+Console.WriteLine(obj.GetType());
 #endregion
