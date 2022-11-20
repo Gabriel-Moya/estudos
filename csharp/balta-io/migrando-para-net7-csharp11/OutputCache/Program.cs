@@ -9,17 +9,17 @@ builder.Services.AddOutputCache(options =>
 builder.Services.AddControllers();
 
 // Para desabilitar o comportamento padrão do Implicity From Services
-builder.Services.Configure<ApiBehaviorOptions>(options =>
-{
-    options.DisableImplicitFromServicesParameters = true;
-});
+//builder.Services.Configure<ApiBehaviorOptions>(options =>
+//{
+//    options.DisableImplicitFromServicesParameters = true;
+//});
 
 var app = builder.Build();
 
-app.MapGet("/", (MeuServico servico) => new
+app.MapGet("/", [EndpointSummary("Send a Hello request to the backend")] (MeuServico servico) => new
 {
     date = DateTime.Now
-});
+}).WithDescription("Descrição do método get!");
 
 app.UseOutputCache();
 app.MapControllers();
