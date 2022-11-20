@@ -98,12 +98,43 @@
 //Action<string> combination = stringAction + wrappedObjectAction;
 //#endregion
 
-#region Dynamic
-dynamic dyn = 1;
-object obj = 1;
+//#region Dynamic
+//dynamic dyn = 1;
+//object obj = 1;
 
-// Rest the mouse pointer over dyn and obj to seer their
-// type at compile time.
-Console.WriteLine(dyn.GetType());
-Console.WriteLine(obj.GetType());
+//// Rest the mouse pointer over dyn and obj to seer their
+//// type at compile time.
+//Console.WriteLine(dyn.GetType());
+//Console.WriteLine(obj.GetType());
+//#endregion
+
+#region DefaultStruct
+var m1 = new Measurement();
+Console.WriteLine(m1);
+
+var m2 = default(Measurement);
+Console.WriteLine(m2);
+
+var m3 = new Measurement[2];
+Console.WriteLine(string.Join(", ", m3));
+
+public readonly struct Measurement
+{
+    public Measurement()
+    {
+        Value = double.NaN;
+        Description = "Undefined";
+    }
+
+    public Measurement(double value, string description)
+    {
+        Value = value;
+        Description = description;
+    }
+
+    public double Value { get; init; }
+    public string Description { get; init; }
+
+    public override string ToString() => $"{Value} ({Description})";
+}
 #endregion
