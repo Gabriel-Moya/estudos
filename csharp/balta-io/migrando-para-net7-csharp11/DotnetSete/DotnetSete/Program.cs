@@ -80,9 +80,20 @@
 ////}; // Permitido
 //#endregion
 
-#region StringsUTF8
-ReadOnlySpan<byte> text1 = new byte[] { 0x65, 0x66, 0x67, 0x68, 0x69 };
-ReadOnlySpan<byte> text2 = "This is an UTF-8 string"u8;
-Console.WriteLine(System.Text.Encoding.UTF8.GetString(text1));
-Console.WriteLine(System.Text.Encoding.UTF8.GetString(text2));
+//#region StringsUTF8
+//ReadOnlySpan<byte> text1 = new byte[] { 0x65, 0x66, 0x67, 0x68, 0x69 };
+//ReadOnlySpan<byte> text2 = "This is an UTF-8 string"u8;
+//Console.WriteLine(System.Text.Encoding.UTF8.GetString(text1));
+//Console.WriteLine(System.Text.Encoding.UTF8.GetString(text2));
+//#endregion
+
+#region CombinedActions
+Action<string> stringAction = str => { };
+Action<object> objectAction = obj => { };
+
+// Creates a new delegate instance with a runtiome type of Action<string>.
+Action<string> wrappedObjectAction = new Action<string>(objectAction);
+
+// The two Action<string> delegate instances can now be combined.
+Action<string> combination = stringAction + wrappedObjectAction;
 #endregion
