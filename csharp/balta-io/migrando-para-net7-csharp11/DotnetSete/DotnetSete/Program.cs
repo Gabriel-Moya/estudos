@@ -1,4 +1,6 @@
 ﻿#region InterpolatedChain
+using System.Reflection.Metadata.Ecma335;
+
 Console.WriteLine("Interpolated Chain:");
 var text = $@"C:\dev"; // Verbatim
 //var text2 = $"C:\dev Este é {text}"; // Non-verbatim
@@ -53,4 +55,11 @@ static int CheckSwitch(int[] values)
         [1, ..] => 4,
         [..] => 50
     };
+#endregion
+
+#region GenericAttributes
+[GenericAttribute<string>()]
+string Method() => default;
+
+public class GenericAttribute<T> : Attribute { }
 #endregion
