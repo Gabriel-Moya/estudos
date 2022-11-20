@@ -3,6 +3,7 @@ builder.Services.AddOutputCache(options =>
 {
     options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(5);
 });
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -26,5 +27,6 @@ app.MapGet("/cache/vary/{cacheId}", (string cacheId) => new
 });
 
 app.UseOutputCache();
+app.MapControllers();
 
 app.Run();
